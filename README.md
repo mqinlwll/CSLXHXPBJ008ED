@@ -17,3 +17,4 @@ Demo: https://mqinlwll.github.io/7US8Q6W14DB8FGO02ZVLKU0BX754N1M13LK9L7TU30033A/
 ## Few note:
 - It will not generate well with the Various Artist (or compilation album).
 - Ignore the templates/various_artist.html, is just mine experiment being failed (for now).
+- Recommend for local use than the github link as demo (some problem with github being link i don't know...)
