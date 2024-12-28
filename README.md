@@ -2,7 +2,9 @@
 
 Demo: https://mqinlwll.github.io/7US8Q6W14DB8FGO02ZVLKU0BX754N1M13LK9L7TU30033A/
 
- This a simple music dashboard that displays detailed track information for audio files. It shows metadata such as title, album, artist, sample rate, bitrate, bitdepth, channel, file size, and duration. However, it has limitations, such as issues with compilation albums and templates. It is designed for local use, and the demo link may not work reliably on GitHub. The repository consists of HTML, Python, CSS, and some JavaScript.
+This a simple music dashboard that displays detailed track information for audio files. It shows metadata such as title, album, artist, sample rate, bitrate, bitdepth, channel, file size, and duration. However, it has limitations, such as issues with compilation albums and templates. It is designed for local use, and the demo link may not work reliably on GitHub. The repository consists of HTML, Python, CSS, and some JavaScript.
+
+The code being generate by ChatGPT.
 
 ## Being able:
 - Update not being overwrite or duplicate.
