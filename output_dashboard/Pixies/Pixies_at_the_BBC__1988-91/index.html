@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pixies at the BBC, 1988-91 - Pixies</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .track-list {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 15px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .track-list ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .track-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px;
+            background-color: #f0f4f8;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .track-box:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        .track-number {
+            flex: 1;
+            font-size: 1.1rem;
+        }
+
+        .track-title {
+            flex: 2;
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        .track-button {
+            background-color: #007bff;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .track-button:hover {
+            background-color: #0056b3;
+        }
+
+        .navigation {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        .btn:focus {
+            outline: none;
+        }
+
+        /* Dark theme */
+        body.dark {
+            background-color: #333;
+            color: #f7f7f7;
+        }
+
+        body.dark .track-list {
+            background-color: #444;
+        }
+
+        body.dark .track-list .track-box {
+            background-color: #555;
+        }
+
+        body.dark .track-list .track-box:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        body.dark .navigation .btn:hover {
+            background-color: #0056b3;
+        }
+
+        body.dark .btn {
+            background-color: #28a745;
+        }
+    </style>
+</head>
+<script>
+    // Function to toggle the theme and store the preference in localStorage
+    function toggleStyle() {
+        document.body.classList.toggle("dark");
+        // Save the current theme state to localStorage
+        if (document.body.classList.contains("dark")) {
+            localStorage.setItem("theme", "dark");
+        } else {
+            localStorage.setItem("theme", "light");
+        }
+    }
+
+    // Check localStorage on page load and apply the saved theme
+    window.onload = function() {
+        const savedTheme = localStorage.getItem("theme");
+        // If theme is saved as 'dark', apply dark mode
+        if (savedTheme === "dark") {
+            document.body.classList.add("dark");
+        } else {
+            document.body.classList.remove("dark");
+        }
+    };
+</script>
+<body>
+    <div class="navigation">
+        <a class="btn" href="../../index.html">Go to Home Page</a>
+        <button onclick="toggleStyle()" class="btn">Change Theme</button>
+    </div>
+    <h1>Pixies at the BBC, 1988-91 - Pixies</h1>
+    <div class="track-list">
+        <p>Total Tracks: 24</p>
+        <div>
+            
+                <div class="track-box">
+                    <span class="track-number">1.</span>
+                    <span class="track-title">Motorway to Roswell (John Peel Session 23rd June 1991)</span>
+                    <a href="Motorway_to_Roswell__John_Peel_Session_23rd_June_1991_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">2.</span>
+                    <span class="track-title">There Goes My Gun (John Peel Session 9th October 1988)</span>
+                    <a href="There_Goes_My_Gun__John_Peel_Session_9th_October_1988_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">3.</span>
+                    <span class="track-title">Allison (John Peel Session 11th June 1990)</span>
+                    <a href="Allison__John_Peel_Session_11th_June_1990_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">4.</span>
+                    <span class="track-title">Dead (John Peel Session 9th October 1988)</span>
+                    <a href="Dead__John_Peel_Session_9th_October_1988_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">5.</span>
+                    <span class="track-title">Into the White (John Peel Session 16th April 1989)</span>
+                    <a href="Into_the_White__John_Peel_Session_16th_April_1989_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">6.</span>
+                    <span class="track-title">Ana (Mark Goodier Session 18th August 1990)</span>
+                    <a href="Ana__Mark_Goodier_Session_18th_August_1990_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">7.</span>
+                    <span class="track-title">Subbacultcha (John Peel Session 23rd June 1991)</span>
+                    <a href="Subbacultcha__John_Peel_Session_23rd_June_1991_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">8.</span>
+                    <span class="track-title">Palace of the Brine (John Peel Session 23rd June 1991)</span>
+                    <a href="Palace_of_the_Brine__John_Peel_Session_23rd_June_1991_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">9.</span>
+                    <span class="track-title">In Heaven (Lady In The Radiator Song) (John Peel Session 3rd May 1988)</span>
+                    <a href="In_Heaven__Lady_In_The_Radiator_Song___John_Peel_Session_3rd_May_1988_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">10.</span>
+                    <span class="track-title">Velouria (John Peel Session 11th June 1990)</span>
+                    <a href="Velouria__John_Peel_Session_11th_June_1990_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">11.</span>
+                    <span class="track-title">Manta Ray (John Peel Session 9th October 1988)</span>
+                    <a href="Manta_Ray__John_Peel_Session_9th_October_1988_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">12.</span>
+                    <span class="track-title">Hey (John Peel Session 3rd May 1988)</span>
+                    <a href="Hey__John_Peel_Session_3rd_May_1988_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">13.</span>
+                    <span class="track-title">Hang on to Your Ego (John Peel Session 11th June 1990)</span>
+                    <a href="Hang_on_to_Your_Ego__John_Peel_Session_11th_June_1990_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">14.</span>
+                    <span class="track-title">Letter to Memphis (John Peel Session 23rd June 1991)</span>
+                    <a href="Letter_to_Memphis__John_Peel_Session_23rd_June_1991_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">15.</span>
+                    <span class="track-title">Allison (Mark Goodier Session 18th August 1990)</span>
+                    <a href="Allison__Mark_Goodier_Session_18th_August_1990_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">16.</span>
+                    <span class="track-title">Down To The Well (John Peel Session 16th April 1989)</span>
+                    <a href="Down_To_The_Well__John_Peel_Session_16th_April_1989_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">17.</span>
+                    <span class="track-title">Is She Weird (John Peel Session 11th June 1990)</span>
+                    <a href="Is_She_Weird__John_Peel_Session_11th_June_1990_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">18.</span>
+                    <span class="track-title">Levitate Me (John Peel Session 3rd May 1988)</span>
+                    <a href="Levitate_Me__John_Peel_Session_3rd_May_1988_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">19.</span>
+                    <span class="track-title">Wave Of Mutilation (John Peel Session 16th April 1989)</span>
+                    <a href="Wave_Of_Mutilation__John_Peel_Session_16th_April_1989_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">20.</span>
+                    <span class="track-title">Wave Of Mutilation (Mark Goodier Session 18th August 1990)</span>
+                    <a href="Wave_Of_Mutilation__Mark_Goodier_Session_18th_August_1990_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">21.</span>
+                    <span class="track-title">Monkey Gone to Heaven (Mark Goodier Session 18th August 1990)</span>
+                    <a href="Monkey_Gone_to_Heaven__Mark_Goodier_Session_18th_August_1990_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">22.</span>
+                    <span class="track-title">Tame (John Peel Session 9th October 1988)</span>
+                    <a href="Tame__John_Peel_Session_9th_October_1988_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">23.</span>
+                    <span class="track-title">Caribou (John Peel Session 3rd May 1988)</span>
+                    <a href="Caribou__John_Peel_Session_3rd_May_1988_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">24.</span>
+                    <span class="track-title">Wild Honey Pie (John Peel Session 3rd May 1988)</span>
+                    <a href="Wild_Honey_Pie__John_Peel_Session_3rd_May_1988_.html" class="track-button">View Detail</a>
+                </div>
+            
+        </div>
+    </div>
+</body>
+</html>

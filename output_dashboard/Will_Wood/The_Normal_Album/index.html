@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Normal Album - Will Wood</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .track-list {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 15px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .track-list ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .track-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px;
+            background-color: #f0f4f8;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .track-box:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        .track-number {
+            flex: 1;
+            font-size: 1.1rem;
+        }
+
+        .track-title {
+            flex: 2;
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        .track-button {
+            background-color: #007bff;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .track-button:hover {
+            background-color: #0056b3;
+        }
+
+        .navigation {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        .btn:focus {
+            outline: none;
+        }
+
+        /* Dark theme */
+        body.dark {
+            background-color: #333;
+            color: #f7f7f7;
+        }
+
+        body.dark .track-list {
+            background-color: #444;
+        }
+
+        body.dark .track-list .track-box {
+            background-color: #555;
+        }
+
+        body.dark .track-list .track-box:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        body.dark .navigation .btn:hover {
+            background-color: #0056b3;
+        }
+
+        body.dark .btn {
+            background-color: #28a745;
+        }
+    </style>
+</head>
+<script>
+    // Function to toggle the theme and store the preference in localStorage
+    function toggleStyle() {
+        document.body.classList.toggle("dark");
+        // Save the current theme state to localStorage
+        if (document.body.classList.contains("dark")) {
+            localStorage.setItem("theme", "dark");
+        } else {
+            localStorage.setItem("theme", "light");
+        }
+    }
+
+    // Check localStorage on page load and apply the saved theme
+    window.onload = function() {
+        const savedTheme = localStorage.getItem("theme");
+        // If theme is saved as 'dark', apply dark mode
+        if (savedTheme === "dark") {
+            document.body.classList.add("dark");
+        } else {
+            document.body.classList.remove("dark");
+        }
+    };
+</script>
+<body>
+    <div class="navigation">
+        <a class="btn" href="../../index.html">Go to Home Page</a>
+        <button onclick="toggleStyle()" class="btn">Change Theme</button>
+    </div>
+    <h1>The Normal Album - Will Wood</h1>
+    <div class="track-list">
+        <p>Total Tracks: 10</p>
+        <div>
+            
+                <div class="track-box">
+                    <span class="track-number">1.</span>
+                    <span class="track-title">Suburbia Overture / Greetings from Mary Bell Township! / (Vampire) Culture / Love Me, Normally</span>
+                    <a href="Suburbia_Overture___Greetings_from_Mary_Bell_Township_____Vampire__Culture___Love_Me__Normally.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">2.</span>
+                    <span class="track-title">…well, better than the alternative</span>
+                    <a href="_well__better_than_the_alternative.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">3.</span>
+                    <span class="track-title">BlackBoxWarrior - OKULTRA</span>
+                    <a href="BlackBoxWarrior_-_OKULTRA.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">4.</span>
+                    <span class="track-title">Laplace’s Angel (Hurt People? Hurt People!)</span>
+                    <a href="Laplace_s_Angel__Hurt_People__Hurt_People__.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">5.</span>
+                    <span class="track-title">I / Me / Myself</span>
+                    <a href="I___Me___Myself.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">6.</span>
+                    <span class="track-title">Marsha, Thankk You for the Dialectics, but I Need You to Leave</span>
+                    <a href="Marsha__Thankk_You_for_the_Dialectics__but_I_Need_You_to_Leave.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">7.</span>
+                    <span class="track-title">Outliars and Hyppocrates: a fun fact about apples</span>
+                    <a href="Outliars_and_Hyppocrates__a_fun_fact_about_apples.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">8.</span>
+                    <span class="track-title">Memento Mori: the most important thing in the world</span>
+                    <a href="Memento_Mori__the_most_important_thing_in_the_world.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">9.</span>
+                    <span class="track-title">2econd 2ight 2eer (that was fun, goodbye.)</span>
+                    <a href="2econd_2ight_2eer__that_was_fun__goodbye__.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">10.</span>
+                    <span class="track-title">Love, Me Normally</span>
+                    <a href="Love__Me_Normally.html" class="track-button">View Detail</a>
+                </div>
+            
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nirvana</title>
+    <style>
+        /* Base Style */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            color: #444;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background-color: #FF6347;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #e53e3e;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .card a {
+            text-decoration: none;
+            color: #FF6347;
+            font-weight: bold;
+        }
+
+        .card a:hover {
+            color: #e53e3e;
+        }
+
+        /* Dark Mode */
+        body.dark {
+            background-color: #333;
+            color: #fff;
+        }
+
+        body.dark .btn {
+            background-color: #FFD700;
+        }
+
+        body.dark .btn:hover {
+            background-color: #FFC107;
+        }
+
+        body.dark .card {
+            background-color: #444;
+            border: 1px solid #555;
+        }
+
+        body.dark .card a {
+            color: #FFD700;
+        }
+
+        body.dark .card a:hover {
+            color: #FFC107;
+        }
+    </style>
+</head>
+<script>
+    // Function to toggle the theme and store the preference in localStorage
+    function toggleStyle() {
+        document.body.classList.toggle("dark");
+        // Save the current theme state to localStorage
+        if (document.body.classList.contains("dark")) {
+            localStorage.setItem("theme", "dark");
+        } else {
+            localStorage.setItem("theme", "light");
+        }
+    }
+
+    // Check localStorage on page load and apply the saved theme
+    window.onload = function() {
+        const savedTheme = localStorage.getItem("theme");
+        // If theme is saved as 'dark', apply dark mode
+        if (savedTheme === "dark") {
+            document.body.classList.add("dark");
+        } else {
+            document.body.classList.remove("dark");
+        }
+    };
+</script>
+<body>
+    <div class="navigation">
+        <a href="../index.html" class="btn">Go to Homepage</a>
+        <button onclick="toggleStyle()" class="btn">Change Theme</button>
+    </div>
+    <h1>Nirvana</h1>
+    <div class="grid">
+        
+        <div class="card">
+            <a href="Live_At_The_Paramount__Live_/index.html">Live At The Paramount (Live)</a>
+        </div>
+        
+        <div class="card">
+            <a href="In_Utero__Deluxe_Edition_/index.html">In Utero (Deluxe Edition)</a>
+        </div>
+        
+        <div class="card">
+            <a href="From_The_Muddy_Banks_Of_The_Wishkah__Live_/index.html">From The Muddy Banks Of The Wishkah (Live)</a>
+        </div>
+        
+        <div class="card">
+            <a href="Live_at_Reading/index.html">Live at Reading</a>
+        </div>
+        
+        <div class="card">
+            <a href="In_Bloom___On_A_Plain___Lithium___Breed/index.html">In Bloom / On A Plain / Lithium / Breed</a>
+        </div>
+        
+        <div class="card">
+            <a href="In_Utero_30th_Live/index.html">In Utero 30th Live</a>
+        </div>
+        
+        <div class="card">
+            <a href="Nevermind__30th_Anniversary_Super_Deluxe_/index.html">Nevermind (30th Anniversary Super Deluxe)</a>
+        </div>
+        
+        <div class="card">
+            <a href="Nevermind__Remastered_/index.html">Nevermind (Remastered)</a>
+        </div>
+        
+        <div class="card">
+            <a href="Bleach__Deluxe_Edition_/index.html">Bleach (Deluxe Edition)</a>
+        </div>
+        
+        <div class="card">
+            <a href="With_The_Lights_Out_-_Box_Set/index.html">With The Lights Out - Box Set</a>
+        </div>
+        
+        <div class="card">
+            <a href="In_Utero/index.html">In Utero</a>
+        </div>
+        
+        <div class="card">
+            <a href="MTV_Unplugged_In_New_York__25th_Anniversary_/index.html">MTV Unplugged In New York (25th Anniversary)</a>
+        </div>
+        
+        <div class="card">
+            <a href="Nirvana/index.html">Nirvana</a>
+        </div>
+        
+        <div class="card">
+            <a href="In_Utero__Super_Deluxe_Edition_/index.html">In Utero (Super Deluxe Edition)</a>
+        </div>
+        
+        <div class="card">
+            <a href="Nevermind__Deluxe_Edition_/index.html">Nevermind (Deluxe Edition)</a>
+        </div>
+        
+        <div class="card">
+            <a href="Incesticide/index.html">Incesticide</a>
+        </div>
+        
+        <div class="card">
+            <a href="MTV_Unplugged_In_New_York/index.html">MTV Unplugged In New York</a>
+        </div>
+        
+        <div class="card">
+            <a href="On_A_Plain___Lithium___Breed__Live_/index.html">On A Plain / Lithium / Breed (Live)</a>
+        </div>
+        
+        <div class="card">
+            <a href="Lithium___Breed__Live_/index.html">Lithium / Breed (Live)</a>
+        </div>
+        
+        <div class="card">
+            <a href="Live_And_Loud__Live_/index.html">Live And Loud (Live)</a>
+        </div>
+        
+        <div class="card">
+            <a href="Breed__Live_In_Amsterdam__Netherlands_1991_/index.html">Breed (Live In Amsterdam, Netherlands/1991)</a>
+        </div>
+        
+    </div>
+</body>
+</html>

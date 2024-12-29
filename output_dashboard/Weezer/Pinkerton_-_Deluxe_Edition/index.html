@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pinkerton - Deluxe Edition - Weezer</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .track-list {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 15px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .track-list ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .track-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px;
+            background-color: #f0f4f8;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .track-box:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        .track-number {
+            flex: 1;
+            font-size: 1.1rem;
+        }
+
+        .track-title {
+            flex: 2;
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        .track-button {
+            background-color: #007bff;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .track-button:hover {
+            background-color: #0056b3;
+        }
+
+        .navigation {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        .btn:focus {
+            outline: none;
+        }
+
+        /* Dark theme */
+        body.dark {
+            background-color: #333;
+            color: #f7f7f7;
+        }
+
+        body.dark .track-list {
+            background-color: #444;
+        }
+
+        body.dark .track-list .track-box {
+            background-color: #555;
+        }
+
+        body.dark .track-list .track-box:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        body.dark .navigation .btn:hover {
+            background-color: #0056b3;
+        }
+
+        body.dark .btn {
+            background-color: #28a745;
+        }
+    </style>
+</head>
+<script>
+    // Function to toggle the theme and store the preference in localStorage
+    function toggleStyle() {
+        document.body.classList.toggle("dark");
+        // Save the current theme state to localStorage
+        if (document.body.classList.contains("dark")) {
+            localStorage.setItem("theme", "dark");
+        } else {
+            localStorage.setItem("theme", "light");
+        }
+    }
+
+    // Check localStorage on page load and apply the saved theme
+    window.onload = function() {
+        const savedTheme = localStorage.getItem("theme");
+        // If theme is saved as 'dark', apply dark mode
+        if (savedTheme === "dark") {
+            document.body.classList.add("dark");
+        } else {
+            document.body.classList.remove("dark");
+        }
+    };
+</script>
+<body>
+    <div class="navigation">
+        <a class="btn" href="../../index.html">Go to Home Page</a>
+        <button onclick="toggleStyle()" class="btn">Change Theme</button>
+    </div>
+    <h1>Pinkerton - Deluxe Edition - Weezer</h1>
+    <div class="track-list">
+        <p>Total Tracks: 36</p>
+        <div>
+            
+                <div class="track-box">
+                    <span class="track-number">1.</span>
+                    <span class="track-title">You Won't Get With Me Tonight</span>
+                    <a href="You_Won_t_Get_With_Me_Tonight.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">2.</span>
+                    <span class="track-title">Pink Triangle (Live at Y100 Sonic Session/1997)</span>
+                    <a href="Pink_Triangle__Live_at_Y100_Sonic_Session_1997_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">3.</span>
+                    <span class="track-title">Getchoo (Tracking Rough)</span>
+                    <a href="Getchoo__Tracking_Rough_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">4.</span>
+                    <span class="track-title">Getting Up And Leaving</span>
+                    <a href="Getting_Up_And_Leaving.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">5.</span>
+                    <span class="track-title">Long Time Sunshine</span>
+                    <a href="Long_Time_Sunshine.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">6.</span>
+                    <span class="track-title">Across The Sea Piano Noodles</span>
+                    <a href="Across_The_Sea_Piano_Noodles.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">7.</span>
+                    <span class="track-title">The Good Life (Live at X96 / 1997)</span>
+                    <a href="The_Good_Life__Live_at_X96___1997_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">8.</span>
+                    <span class="track-title">The Good Life (Live at Y100 Sonic Studios/1997)</span>
+                    <a href="The_Good_Life__Live_at_Y100_Sonic_Studios_1997_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">9.</span>
+                    <span class="track-title">El Scorcho (Live at Reading Festival / 1996)</span>
+                    <a href="El_Scorcho__Live_at_Reading_Festival___1996_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">10.</span>
+                    <span class="track-title">Tired Of Sex (Tracking Rough)</span>
+                    <a href="Tired_Of_Sex__Tracking_Rough_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">11.</span>
+                    <span class="track-title">El Scorcho (Live at Y100 Sonic Studios/1997)</span>
+                    <a href="El_Scorcho__Live_at_Y100_Sonic_Studios_1997_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">12.</span>
+                    <span class="track-title">Pink Triangle (Live at Reading Festival / 1996)</span>
+                    <a href="Pink_Triangle__Live_at_Reading_Festival___1996_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">13.</span>
+                    <span class="track-title">Why Bother? (Live at Reading Festival / 1996)</span>
+                    <a href="Why_Bother___Live_at_Reading_Festival___1996_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">14.</span>
+                    <span class="track-title">Tragic Girl</span>
+                    <a href="Tragic_Girl.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">15.</span>
+                    <span class="track-title">Butterfly (Alternate Take)</span>
+                    <a href="Butterfly__Alternate_Take_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">16.</span>
+                    <span class="track-title">El Scorcho (Live/Acoustic at Shorecrest High School/1996)</span>
+                    <a href="El_Scorcho__Live_Acoustic_at_Shorecrest_High_School_1996_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">17.</span>
+                    <span class="track-title">I Swear It's True</span>
+                    <a href="I_Swear_It_s_True.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">18.</span>
+                    <span class="track-title">Pink Triangle</span>
+                    <a href="Pink_Triangle.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">19.</span>
+                    <span class="track-title">Waiting On You</span>
+                    <a href="Waiting_On_You.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">20.</span>
+                    <span class="track-title">Across The Sea</span>
+                    <a href="Across_The_Sea.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">21.</span>
+                    <span class="track-title">Devotion</span>
+                    <a href="Devotion.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">22.</span>
+                    <span class="track-title">Falling For You</span>
+                    <a href="Falling_For_You.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">23.</span>
+                    <span class="track-title">The Good Life</span>
+                    <a href="The_Good_Life.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">24.</span>
+                    <span class="track-title">No Other One</span>
+                    <a href="No_Other_One.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">25.</span>
+                    <span class="track-title">Pink Triangle (Radio Remix)</span>
+                    <a href="Pink_Triangle__Radio_Remix_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">26.</span>
+                    <span class="track-title">Interview - 107.7 The End - Blue vs Pinkerton</span>
+                    <a href="Interview_-_107_7_The_End_-_Blue_vs_Pinkerton.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">27.</span>
+                    <span class="track-title">Tired Of Sex</span>
+                    <a href="Tired_Of_Sex.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">28.</span>
+                    <span class="track-title">Why Bother?</span>
+                    <a href="Why_Bother_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">29.</span>
+                    <span class="track-title">Pink Triangle (Acoustic /Live Shorecrest High School, Seattle, Washington 1996)</span>
+                    <a href="Pink_Triangle__Acoustic__Live_Shorecrest_High_School__Seattle__Washington_1996_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">30.</span>
+                    <span class="track-title">I Just Threw Out The Love Of My Dreams</span>
+                    <a href="I_Just_Threw_Out_The_Love_Of_My_Dreams.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">31.</span>
+                    <span class="track-title">El Scorcho</span>
+                    <a href="El_Scorcho.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">32.</span>
+                    <span class="track-title">The Good Life (Radio Remix)</span>
+                    <a href="The_Good_Life__Radio_Remix_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">33.</span>
+                    <span class="track-title">You Gave Your Love To Me Softly</span>
+                    <a href="You_Gave_Your_Love_To_Me_Softly.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">34.</span>
+                    <span class="track-title">Getchoo</span>
+                    <a href="Getchoo.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">35.</span>
+                    <span class="track-title">The Good Life (Acoustic /Live)</span>
+                    <a href="The_Good_Life__Acoustic__Live_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">36.</span>
+                    <span class="track-title">Butterfly</span>
+                    <a href="Butterfly.html" class="track-button">View Detail</a>
+                </div>
+            
+        </div>
+    </div>
+</body>
+</html>

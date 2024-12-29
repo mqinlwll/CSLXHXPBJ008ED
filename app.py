@@ -2,8 +2,10 @@ import os
 import re
 from collections import defaultdict
 from mutagen import File
+from mutagen.mp4 import MP4  # Add MP4 support for AAC and ALAC
 from jinja2 import Environment, FileSystemLoader
 from bs4 import BeautifulSoup
+
 
 def parse_metadata(music_folder):
     music_data = defaultdict(lambda: defaultdict(list))
@@ -26,7 +28,7 @@ def parse_metadata(music_folder):
                 bitrate = audio.info.bitrate // 1000 if hasattr(audio.info, 'bitrate') else 'N/A'
                 sample_rate = audio.info.sample_rate if hasattr(audio.info, 'sample_rate') else 'N/A'
                 duration = audio.info.length if hasattr(audio.info, 'length') else 0
-                codec = type(audio).__name__
+                codec = determine_codec(audio)
                 file_size = os.path.getsize(filepath)
 
                 file_size_str = (
@@ -73,8 +75,23 @@ def parse_metadata(music_folder):
     return music_data, track_metadata
 
 
+def determine_codec(audio):
+    """
+    Determines the codec used by the audio file.
+    """
+    if isinstance(audio, MP4) and hasattr(audio.info, 'codec'):
+        # Recognize AAC and ALAC
+        codec_map = {
+            'alac': 'ALAC',
+            'mp4a': 'AAC',
+        }
+        return codec_map.get(audio.info.codec, "Unknown Codec")
+    return type(audio).__name__
+
+
 def sanitize_filename(name):
     return re.sub(r'[^a-zA-Z0-9_-]', '_', name)
+
 
 def generate_dashboard(music_data, output_folder):
     env = Environment(loader=FileSystemLoader('templates'))
@@ -167,6 +184,7 @@ def generate_dashboard(music_data, output_folder):
                 )
                 with open(os.path.join(album_folder, track_filename), 'w', encoding='utf-8') as f:
                     f.write(track_html)
+
 
 def main():
     music_folder = input("Enter the path to your music folder: ")

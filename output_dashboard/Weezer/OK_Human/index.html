@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OK Human - Weezer</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .track-list {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 15px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .track-list ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .track-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px;
+            background-color: #f0f4f8;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .track-box:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        .track-number {
+            flex: 1;
+            font-size: 1.1rem;
+        }
+
+        .track-title {
+            flex: 2;
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        .track-button {
+            background-color: #007bff;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .track-button:hover {
+            background-color: #0056b3;
+        }
+
+        .navigation {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        .btn:focus {
+            outline: none;
+        }
+
+        /* Dark theme */
+        body.dark {
+            background-color: #333;
+            color: #f7f7f7;
+        }
+
+        body.dark .track-list {
+            background-color: #444;
+        }
+
+        body.dark .track-list .track-box {
+            background-color: #555;
+        }
+
+        body.dark .track-list .track-box:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        body.dark .navigation .btn:hover {
+            background-color: #0056b3;
+        }
+
+        body.dark .btn {
+            background-color: #28a745;
+        }
+    </style>
+</head>
+<script>
+    // Function to toggle the theme and store the preference in localStorage
+    function toggleStyle() {
+        document.body.classList.toggle("dark");
+        // Save the current theme state to localStorage
+        if (document.body.classList.contains("dark")) {
+            localStorage.setItem("theme", "dark");
+        } else {
+            localStorage.setItem("theme", "light");
+        }
+    }
+
+    // Check localStorage on page load and apply the saved theme
+    window.onload = function() {
+        const savedTheme = localStorage.getItem("theme");
+        // If theme is saved as 'dark', apply dark mode
+        if (savedTheme === "dark") {
+            document.body.classList.add("dark");
+        } else {
+            document.body.classList.remove("dark");
+        }
+    };
+</script>
+<body>
+    <div class="navigation">
+        <a class="btn" href="../../index.html">Go to Home Page</a>
+        <button onclick="toggleStyle()" class="btn">Change Theme</button>
+    </div>
+    <h1>OK Human - Weezer</h1>
+    <div class="track-list">
+        <p>Total Tracks: 12</p>
+        <div>
+            
+                <div class="track-box">
+                    <span class="track-number">1.</span>
+                    <span class="track-title">La Brea Tar Pits</span>
+                    <a href="La_Brea_Tar_Pits.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">2.</span>
+                    <span class="track-title">Everything Happens For A Reason</span>
+                    <a href="Everything_Happens_For_A_Reason.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">3.</span>
+                    <span class="track-title">Bird With A Broken Wing</span>
+                    <a href="Bird_With_A_Broken_Wing.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">4.</span>
+                    <span class="track-title">All My Favorite Songs</span>
+                    <a href="All_My_Favorite_Songs.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">5.</span>
+                    <span class="track-title">Dead Roses</span>
+                    <a href="Dead_Roses.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">6.</span>
+                    <span class="track-title">Numbers</span>
+                    <a href="Numbers.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">7.</span>
+                    <span class="track-title">Playing My Piano</span>
+                    <a href="Playing_My_Piano.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">8.</span>
+                    <span class="track-title">Here Comes The Rain</span>
+                    <a href="Here_Comes_The_Rain.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">9.</span>
+                    <span class="track-title">Mirror Image</span>
+                    <a href="Mirror_Image.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">10.</span>
+                    <span class="track-title">Aloo Gobi</span>
+                    <a href="Aloo_Gobi.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">11.</span>
+                    <span class="track-title">Screens</span>
+                    <a href="Screens.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">12.</span>
+                    <span class="track-title">Grapes Of Wrath</span>
+                    <a href="Grapes_Of_Wrath.html" class="track-button">View Detail</a>
+                </div>
+            
+        </div>
+    </div>
+</body>
+</html>

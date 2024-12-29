@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cracker Island (Deluxe) - Gorillaz</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .track-list {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 15px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .track-list ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .track-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px;
+            background-color: #f0f4f8;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .track-box:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        .track-number {
+            flex: 1;
+            font-size: 1.1rem;
+        }
+
+        .track-title {
+            flex: 2;
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        .track-button {
+            background-color: #007bff;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .track-button:hover {
+            background-color: #0056b3;
+        }
+
+        .navigation {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        .btn:focus {
+            outline: none;
+        }
+
+        /* Dark theme */
+        body.dark {
+            background-color: #333;
+            color: #f7f7f7;
+        }
+
+        body.dark .track-list {
+            background-color: #444;
+        }
+
+        body.dark .track-list .track-box {
+            background-color: #555;
+        }
+
+        body.dark .track-list .track-box:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        body.dark .navigation .btn:hover {
+            background-color: #0056b3;
+        }
+
+        body.dark .btn {
+            background-color: #28a745;
+        }
+    </style>
+</head>
+<script>
+    // Function to toggle the theme and store the preference in localStorage
+    function toggleStyle() {
+        document.body.classList.toggle("dark");
+        // Save the current theme state to localStorage
+        if (document.body.classList.contains("dark")) {
+            localStorage.setItem("theme", "dark");
+        } else {
+            localStorage.setItem("theme", "light");
+        }
+    }
+
+    // Check localStorage on page load and apply the saved theme
+    window.onload = function() {
+        const savedTheme = localStorage.getItem("theme");
+        // If theme is saved as 'dark', apply dark mode
+        if (savedTheme === "dark") {
+            document.body.classList.add("dark");
+        } else {
+            document.body.classList.remove("dark");
+        }
+    };
+</script>
+<body>
+    <div class="navigation">
+        <a class="btn" href="../../index.html">Go to Home Page</a>
+        <button onclick="toggleStyle()" class="btn">Change Theme</button>
+    </div>
+    <h1>Cracker Island (Deluxe) - Gorillaz</h1>
+    <div class="track-list">
+        <p>Total Tracks: 15</p>
+        <div>
+            
+                <div class="track-box">
+                    <span class="track-number">1.</span>
+                    <span class="track-title">Baby Queen</span>
+                    <a href="Baby_Queen.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">2.</span>
+                    <span class="track-title">New Gold (feat. Tame Impala and Bootie Brown)</span>
+                    <a href="New_Gold__feat__Tame_Impala_and_Bootie_Brown_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">3.</span>
+                    <span class="track-title">Oil (feat. Stevie Nicks)</span>
+                    <a href="Oil__feat__Stevie_Nicks_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">4.</span>
+                    <span class="track-title">Tarantula</span>
+                    <a href="Tarantula.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">5.</span>
+                    <span class="track-title">Possession Island (feat. Beck)</span>
+                    <a href="Possession_Island__feat__Beck_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">6.</span>
+                    <span class="track-title">The Tired Influencer</span>
+                    <a href="The_Tired_Influencer.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">7.</span>
+                    <span class="track-title">Crocadillaz (feat. De La Soul and Dawn Penn)</span>
+                    <a href="Crocadillaz__feat__De_La_Soul_and_Dawn_Penn_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">8.</span>
+                    <span class="track-title">Silent Running (feat. Adeleye Omotayo)</span>
+                    <a href="Silent_Running__feat__Adeleye_Omotayo_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">9.</span>
+                    <span class="track-title">Tormenta (feat. Bad Bunny)</span>
+                    <a href="Tormenta__feat__Bad_Bunny_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">10.</span>
+                    <span class="track-title">Silent Running (feat. Adeleye Omotayo) [2D Piano Version]</span>
+                    <a href="Silent_Running__feat__Adeleye_Omotayo___2D_Piano_Version_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">11.</span>
+                    <span class="track-title">Captain Chicken (feat. Del The Funky Homosapien)</span>
+                    <a href="Captain_Chicken__feat__Del_The_Funky_Homosapien_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">12.</span>
+                    <span class="track-title">New Gold (feat. Tame Impala and Bootie Brown) (Dom Dolla Remix)</span>
+                    <a href="New_Gold__feat__Tame_Impala_and_Bootie_Brown___Dom_Dolla_Remix_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">13.</span>
+                    <span class="track-title">Controllah (feat. MC Bin Laden)</span>
+                    <a href="Controllah__feat__MC_Bin_Laden_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">14.</span>
+                    <span class="track-title">Cracker Island (feat. Thundercat)</span>
+                    <a href="Cracker_Island__feat__Thundercat_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">15.</span>
+                    <span class="track-title">Skinny Ape</span>
+                    <a href="Skinny_Ape.html" class="track-button">View Detail</a>
+                </div>
+            
+        </div>
+    </div>
+</body>
+</html>

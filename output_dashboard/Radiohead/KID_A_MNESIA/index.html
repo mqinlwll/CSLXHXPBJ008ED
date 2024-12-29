@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KID A MNESIA - Radiohead</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .track-list {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 15px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .track-list ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .track-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px;
+            background-color: #f0f4f8;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .track-box:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        .track-number {
+            flex: 1;
+            font-size: 1.1rem;
+        }
+
+        .track-title {
+            flex: 2;
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        .track-button {
+            background-color: #007bff;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .track-button:hover {
+            background-color: #0056b3;
+        }
+
+        .navigation {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        .btn:focus {
+            outline: none;
+        }
+
+        /* Dark theme */
+        body.dark {
+            background-color: #333;
+            color: #f7f7f7;
+        }
+
+        body.dark .track-list {
+            background-color: #444;
+        }
+
+        body.dark .track-list .track-box {
+            background-color: #555;
+        }
+
+        body.dark .track-list .track-box:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        body.dark .navigation .btn:hover {
+            background-color: #0056b3;
+        }
+
+        body.dark .btn {
+            background-color: #28a745;
+        }
+    </style>
+</head>
+<script>
+    // Function to toggle the theme and store the preference in localStorage
+    function toggleStyle() {
+        document.body.classList.toggle("dark");
+        // Save the current theme state to localStorage
+        if (document.body.classList.contains("dark")) {
+            localStorage.setItem("theme", "dark");
+        } else {
+            localStorage.setItem("theme", "light");
+        }
+    }
+
+    // Check localStorage on page load and apply the saved theme
+    window.onload = function() {
+        const savedTheme = localStorage.getItem("theme");
+        // If theme is saved as 'dark', apply dark mode
+        if (savedTheme === "dark") {
+            document.body.classList.add("dark");
+        } else {
+            document.body.classList.remove("dark");
+        }
+    };
+</script>
+<body>
+    <div class="navigation">
+        <a class="btn" href="../../index.html">Go to Home Page</a>
+        <button onclick="toggleStyle()" class="btn">Change Theme</button>
+    </div>
+    <h1>KID A MNESIA - Radiohead</h1>
+    <div class="track-list">
+        <p>Total Tracks: 34</p>
+        <div>
+            
+                <div class="track-box">
+                    <span class="track-number">1.</span>
+                    <span class="track-title">Dollars and Cents</span>
+                    <a href="Dollars_and_Cents.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">2.</span>
+                    <span class="track-title">Packt Like Sardines In a Crushd Tin Box</span>
+                    <a href="Packt_Like_Sardines_In_a_Crushd_Tin_Box.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">3.</span>
+                    <span class="track-title">Morning Bell/Amnesiac</span>
+                    <a href="Morning_Bell_Amnesiac.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">4.</span>
+                    <span class="track-title">I Might Be Wrong</span>
+                    <a href="I_Might_Be_Wrong.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">5.</span>
+                    <span class="track-title">Knives Out</span>
+                    <a href="Knives_Out.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">6.</span>
+                    <span class="track-title">Pulk/Pull Revolving Doors</span>
+                    <a href="Pulk_Pull_Revolving_Doors.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">7.</span>
+                    <span class="track-title">Hunting Bears</span>
+                    <a href="Hunting_Bears.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">8.</span>
+                    <span class="track-title">Pyramid Song</span>
+                    <a href="Pyramid_Song.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">9.</span>
+                    <span class="track-title">Life In a Glasshouse</span>
+                    <a href="Life_In_a_Glasshouse.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">10.</span>
+                    <span class="track-title">Like Spinning Plates</span>
+                    <a href="Like_Spinning_Plates.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">11.</span>
+                    <span class="track-title">You And Whose Army?</span>
+                    <a href="You_And_Whose_Army_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">12.</span>
+                    <span class="track-title">Untitled</span>
+                    <a href="Untitled.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">13.</span>
+                    <span class="track-title">Idioteque</span>
+                    <a href="Idioteque.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">14.</span>
+                    <span class="track-title">Kid A</span>
+                    <a href="Kid_A.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">15.</span>
+                    <span class="track-title">The National Anthem</span>
+                    <a href="The_National_Anthem.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">16.</span>
+                    <span class="track-title">Everything In Its Right Place</span>
+                    <a href="Everything_In_Its_Right_Place.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">17.</span>
+                    <span class="track-title">Treefingers</span>
+                    <a href="Treefingers.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">18.</span>
+                    <span class="track-title">How to Disappear Completely</span>
+                    <a href="How_to_Disappear_Completely.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">19.</span>
+                    <span class="track-title">Motion Picture Soundtrack</span>
+                    <a href="Motion_Picture_Soundtrack.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">20.</span>
+                    <span class="track-title">Morning Bell</span>
+                    <a href="Morning_Bell.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">21.</span>
+                    <span class="track-title">In Limbo</span>
+                    <a href="In_Limbo.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">22.</span>
+                    <span class="track-title">Optimistic</span>
+                    <a href="Optimistic.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">23.</span>
+                    <span class="track-title">The Morning Bell (In the Dark Version)</span>
+                    <a href="The_Morning_Bell__In_the_Dark_Version_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">24.</span>
+                    <span class="track-title">Untitled v2</span>
+                    <a href="Untitled_v2.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">25.</span>
+                    <span class="track-title">If You Say the Word</span>
+                    <a href="If_You_Say_the_Word.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">26.</span>
+                    <span class="track-title">Untitled v3</span>
+                    <a href="Untitled_v3.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">27.</span>
+                    <span class="track-title">Follow Me Around</span>
+                    <a href="Follow_Me_Around.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">28.</span>
+                    <span class="track-title">Fog (Again Again Version)</span>
+                    <a href="Fog__Again_Again_Version_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">29.</span>
+                    <span class="track-title">Pyramid Strings</span>
+                    <a href="Pyramid_Strings.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">30.</span>
+                    <span class="track-title">How to Disappear into Strings</span>
+                    <a href="How_to_Disappear_into_Strings.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">31.</span>
+                    <span class="track-title">Untitled v1</span>
+                    <a href="Untitled_v1.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">32.</span>
+                    <span class="track-title">Alt. Fast Track</span>
+                    <a href="Alt__Fast_Track.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">33.</span>
+                    <span class="track-title">Pulk/Pull (True Love Waits Version)</span>
+                    <a href="Pulk_Pull__True_Love_Waits_Version_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">34.</span>
+                    <span class="track-title">Like Spinning Plates ('Why Us?' Version)</span>
+                    <a href="Like_Spinning_Plates___Why_Us___Version_.html" class="track-button">View Detail</a>
+                </div>
+            
+        </div>
+    </div>
+</body>
+</html>

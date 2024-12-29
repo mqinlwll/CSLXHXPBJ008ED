@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shiro SAGISU Music from "SHIN EVANGELION" EVANGELION: 3.0+1.0. - Shiro Sagisu</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .track-list {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 15px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .track-list ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .track-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px;
+            background-color: #f0f4f8;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .track-box:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        .track-number {
+            flex: 1;
+            font-size: 1.1rem;
+        }
+
+        .track-title {
+            flex: 2;
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        .track-button {
+            background-color: #007bff;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .track-button:hover {
+            background-color: #0056b3;
+        }
+
+        .navigation {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        .btn:focus {
+            outline: none;
+        }
+
+        /* Dark theme */
+        body.dark {
+            background-color: #333;
+            color: #f7f7f7;
+        }
+
+        body.dark .track-list {
+            background-color: #444;
+        }
+
+        body.dark .track-list .track-box {
+            background-color: #555;
+        }
+
+        body.dark .track-list .track-box:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        body.dark .navigation .btn:hover {
+            background-color: #0056b3;
+        }
+
+        body.dark .btn {
+            background-color: #28a745;
+        }
+    </style>
+</head>
+<script>
+    // Function to toggle the theme and store the preference in localStorage
+    function toggleStyle() {
+        document.body.classList.toggle("dark");
+        // Save the current theme state to localStorage
+        if (document.body.classList.contains("dark")) {
+            localStorage.setItem("theme", "dark");
+        } else {
+            localStorage.setItem("theme", "light");
+        }
+    }
+
+    // Check localStorage on page load and apply the saved theme
+    window.onload = function() {
+        const savedTheme = localStorage.getItem("theme");
+        // If theme is saved as 'dark', apply dark mode
+        if (savedTheme === "dark") {
+            document.body.classList.add("dark");
+        } else {
+            document.body.classList.remove("dark");
+        }
+    };
+</script>
+<body>
+    <div class="navigation">
+        <a class="btn" href="../../index.html">Go to Home Page</a>
+        <button onclick="toggleStyle()" class="btn">Change Theme</button>
+    </div>
+    <h1>Shiro SAGISU Music from "SHIN EVANGELION" EVANGELION: 3.0+1.0. - Shiro Sagisu</h1>
+    <div class="track-list">
+        <p>Total Tracks: 54</p>
+        <div>
+            
+                <div class="track-box">
+                    <span class="track-number">1.</span>
+                    <span class="track-title">born evil</span>
+                    <a href="born_evil.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">2.</span>
+                    <span class="track-title">i'll go on loving someone else =version orchestre=</span>
+                    <a href="i_ll_go_on_loving_someone_else__version_orchestre_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">3.</span>
+                    <span class="track-title">psycho</span>
+                    <a href="psycho.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">4.</span>
+                    <span class="track-title">mirror mirror: refrain</span>
+                    <a href="mirror_mirror__refrain.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">5.</span>
+                    <span class="track-title">the path</span>
+                    <a href="the_path.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">6.</span>
+                    <span class="track-title">metamorphosis</span>
+                    <a href="metamorphosis.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">7.</span>
+                    <span class="track-title">pensees intimes: piano dans l'orchestre a cordes</span>
+                    <a href="pensees_intimes__piano_dans_l_orchestre_a_cordes.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">8.</span>
+                    <span class="track-title">voices in my head</span>
+                    <a href="voices_in_my_head.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">9.</span>
+                    <span class="track-title">:||</span>
+                    <a href="___.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">10.</span>
+                    <span class="track-title">what if?: orchestra, choir and piano</span>
+                    <a href="what_if___orchestra__choir_and_piano.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">11.</span>
+                    <span class="track-title">paranoia</span>
+                    <a href="paranoia.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">12.</span>
+                    <span class="track-title">citation from 'joy to the world'</span>
+                    <a href="citation_from__joy_to_the_world_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">13.</span>
+                    <span class="track-title">mirror mirror: orchestra and choir</span>
+                    <a href="mirror_mirror__orchestra_and_choir.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">14.</span>
+                    <span class="track-title">this is the dream, beyond belief...</span>
+                    <a href="this_is_the_dream__beyond_belief___.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">15.</span>
+                    <span class="track-title">Voyager - Gravestone Without Date</span>
+                    <a href="Voyager_-_Gravestone_Without_Date.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">16.</span>
+                    <span class="track-title">theme du concerto 494</span>
+                    <a href="theme_du_concerto_494.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">17.</span>
+                    <span class="track-title">killer</span>
+                    <a href="killer.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">18.</span>
+                    <span class="track-title">pillars of faith</span>
+                    <a href="pillars_of_faith.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">19.</span>
+                    <span class="track-title">ave verum corpus</span>
+                    <a href="ave_verum_corpus.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">20.</span>
+                    <span class="track-title">EM20 =wunder operation=</span>
+                    <a href="EM20__wunder_operation_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">21.</span>
+                    <span class="track-title">EM10A alterne bis</span>
+                    <a href="EM10A_alterne_bis.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">22.</span>
+                    <span class="track-title">l'homme n'est ni ange ni bete</span>
+                    <a href="l_homme_n_est_ni_ange_ni_bete.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">23.</span>
+                    <span class="track-title">m & r: piano</span>
+                    <a href="m___r__piano.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">24.</span>
+                    <span class="track-title">yearning for your love</span>
+                    <a href="yearning_for_your_love.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">25.</span>
+                    <span class="track-title">hand of fate</span>
+                    <a href="hand_of_fate.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">26.</span>
+                    <span class="track-title">tema principale: orchestra dedicata ai maestri</span>
+                    <a href="tema_principale__orchestra_dedicata_ai_maestri.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">27.</span>
+                    <span class="track-title">paris</span>
+                    <a href="paris.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">28.</span>
+                    <span class="track-title">tema principale: piano dedicata ai maestri</span>
+                    <a href="tema_principale__piano_dedicata_ai_maestri.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">29.</span>
+                    <span class="track-title">euro nerv</span>
+                    <a href="euro_nerv.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">30.</span>
+                    <span class="track-title">gekitotsu! gouten tai daimakan</span>
+                    <a href="gekitotsu__gouten_tai_daimakan.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">31.</span>
+                    <span class="track-title">if a cause is worth dying for then be</span>
+                    <a href="if_a_cause_is_worth_dying_for_then_be.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">32.</span>
+                    <span class="track-title">EM10A alterne</span>
+                    <a href="EM10A_alterne.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">33.</span>
+                    <span class="track-title">unwelcome: piano</span>
+                    <a href="unwelcome__piano.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">34.</span>
+                    <span class="track-title">berceuse: piano dans l'orchestre a cordes</span>
+                    <a href="berceuse__piano_dans_l_orchestre_a_cordes.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">35.</span>
+                    <span class="track-title">berceuse: piano</span>
+                    <a href="berceuse__piano.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">36.</span>
+                    <span class="track-title">karma</span>
+                    <a href="karma.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">37.</span>
+                    <span class="track-title">lost in the memory</span>
+                    <a href="lost_in_the_memory.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">38.</span>
+                    <span class="track-title">prettiest star</span>
+                    <a href="prettiest_star.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">39.</span>
+                    <span class="track-title">gekitotsu! gouten tai daimakan =hooked on the last train=</span>
+                    <a href="gekitotsu__gouten_tai_daimakan__hooked_on_the_last_train_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">40.</span>
+                    <span class="track-title">m & r: suite pour piano, flute basse et orchestre</span>
+                    <a href="m___r__suite_pour_piano__flute_basse_et_orchestre.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">41.</span>
+                    <span class="track-title">the way of life</span>
+                    <a href="the_way_of_life.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">42.</span>
+                    <span class="track-title">lost in the memory: playback</span>
+                    <a href="lost_in_the_memory__playback.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">43.</span>
+                    <span class="track-title">pensees intimes: piano</span>
+                    <a href="pensees_intimes__piano.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">44.</span>
+                    <span class="track-title">soul love: guitar to orchestra segue</span>
+                    <a href="soul_love__guitar_to_orchestra_segue.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">45.</span>
+                    <span class="track-title">what if?: guitar</span>
+                    <a href="what_if___guitar.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">46.</span>
+                    <span class="track-title">tema principale: tromba e orchestra</span>
+                    <a href="tema_principale__tromba_e_orchestra.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">47.</span>
+                    <span class="track-title">reminiscence: epilogue</span>
+                    <a href="reminiscence__epilogue.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">48.</span>
+                    <span class="track-title">unwelcome: orchestra</span>
+                    <a href="unwelcome__orchestra.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">49.</span>
+                    <span class="track-title">Voyager - Gravestone Without Date =suppa duppa bossa=</span>
+                    <a href="Voyager_-_Gravestone_Without_Date__suppa_duppa_bossa_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">50.</span>
+                    <span class="track-title">this is the dream</span>
+                    <a href="this_is_the_dream.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">51.</span>
+                    <span class="track-title">hand of fate: playback</span>
+                    <a href="hand_of_fate__playback.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">52.</span>
+                    <span class="track-title">yearning for your love: playback</span>
+                    <a href="yearning_for_your_love__playback.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">53.</span>
+                    <span class="track-title">la plus belle etoile</span>
+                    <a href="la_plus_belle_etoile.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">54.</span>
+                    <span class="track-title">tema principale: chitarra</span>
+                    <a href="tema_principale__chitarra.html" class="track-button">View Detail</a>
+                </div>
+            
+        </div>
+    </div>
+</body>
+</html>

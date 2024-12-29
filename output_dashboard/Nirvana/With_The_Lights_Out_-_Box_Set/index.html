@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>With The Lights Out - Box Set - Nirvana</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .track-list {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 15px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .track-list ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .track-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px;
+            background-color: #f0f4f8;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .track-box:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        .track-number {
+            flex: 1;
+            font-size: 1.1rem;
+        }
+
+        .track-title {
+            flex: 2;
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        .track-button {
+            background-color: #007bff;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .track-button:hover {
+            background-color: #0056b3;
+        }
+
+        .navigation {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        .btn:focus {
+            outline: none;
+        }
+
+        /* Dark theme */
+        body.dark {
+            background-color: #333;
+            color: #f7f7f7;
+        }
+
+        body.dark .track-list {
+            background-color: #444;
+        }
+
+        body.dark .track-list .track-box {
+            background-color: #555;
+        }
+
+        body.dark .track-list .track-box:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        body.dark .navigation .btn:hover {
+            background-color: #0056b3;
+        }
+
+        body.dark .btn {
+            background-color: #28a745;
+        }
+    </style>
+</head>
+<script>
+    // Function to toggle the theme and store the preference in localStorage
+    function toggleStyle() {
+        document.body.classList.toggle("dark");
+        // Save the current theme state to localStorage
+        if (document.body.classList.contains("dark")) {
+            localStorage.setItem("theme", "dark");
+        } else {
+            localStorage.setItem("theme", "light");
+        }
+    }
+
+    // Check localStorage on page load and apply the saved theme
+    window.onload = function() {
+        const savedTheme = localStorage.getItem("theme");
+        // If theme is saved as 'dark', apply dark mode
+        if (savedTheme === "dark") {
+            document.body.classList.add("dark");
+        } else {
+            document.body.classList.remove("dark");
+        }
+    };
+</script>
+<body>
+    <div class="navigation">
+        <a class="btn" href="../../index.html">Go to Home Page</a>
+        <button onclick="toggleStyle()" class="btn">Change Theme</button>
+    </div>
+    <h1>With The Lights Out - Box Set - Nirvana</h1>
+    <div class="track-list">
+        <p>Total Tracks: 61</p>
+        <div>
+            
+                <div class="track-box">
+                    <span class="track-number">1.</span>
+                    <span class="track-title">Verse Chorus Verse (Outtake)</span>
+                    <a href="Verse_Chorus_Verse__Outtake_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">2.</span>
+                    <span class="track-title">Return Of The Rat (Outtake)</span>
+                    <a href="Return_Of_The_Rat__Outtake_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">3.</span>
+                    <span class="track-title">Old Age (Nevermind Outtake)</span>
+                    <a href="Old_Age__Nevermind_Outtake_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">4.</span>
+                    <span class="track-title">Opinion (Live Solo Acoustic)</span>
+                    <a href="Opinion__Live_Solo_Acoustic_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">5.</span>
+                    <span class="track-title">Sliver (Solo Acoustic Demo)</span>
+                    <a href="Sliver__Solo_Acoustic_Demo_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">6.</span>
+                    <span class="track-title">Aneurysm</span>
+                    <a href="Aneurysm.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">7.</span>
+                    <span class="track-title">Breed (Rough Mix)</span>
+                    <a href="Breed__Rough_Mix_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">8.</span>
+                    <span class="track-title">Been A Son (Live Solo Acoustic)</span>
+                    <a href="Been_A_Son__Live_Solo_Acoustic_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">9.</span>
+                    <span class="track-title">Smells Like Teen Spirit (Butch Vig Mix)</span>
+                    <a href="Smells_Like_Teen_Spirit__Butch_Vig_Mix_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">10.</span>
+                    <span class="track-title">Endless, Nameless (1991 Radio Appearance)</span>
+                    <a href="Endless__Nameless__1991_Radio_Appearance_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">11.</span>
+                    <span class="track-title">Lithium (Live Solo Acoustic)</span>
+                    <a href="Lithium__Live_Solo_Acoustic_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">12.</span>
+                    <span class="track-title">Oh The Guilt</span>
+                    <a href="Oh_The_Guilt.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">13.</span>
+                    <span class="track-title">Curmudgeon</span>
+                    <a href="Curmudgeon.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">14.</span>
+                    <span class="track-title">Here She Comes Now (Demo)</span>
+                    <a href="Here_She_Comes_Now__Demo_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">15.</span>
+                    <span class="track-title">Dumb (1991 Radio Appearance)</span>
+                    <a href="Dumb__1991_Radio_Appearance_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">16.</span>
+                    <span class="track-title">D-7 (1990 Radio Appearance)</span>
+                    <a href="D-7__1990_Radio_Appearance_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">17.</span>
+                    <span class="track-title">Pay To Play (Demo)</span>
+                    <a href="Pay_To_Play__Demo_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">18.</span>
+                    <span class="track-title">Drain You (Demo)</span>
+                    <a href="Drain_You__Demo_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">19.</span>
+                    <span class="track-title">Smells Like Teen Spirit (Rehearsal Demo)</span>
+                    <a href="Smells_Like_Teen_Spirit__Rehearsal_Demo_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">20.</span>
+                    <span class="track-title">Where Did You Sleep Last Night (Solo Acoustic Demo)</span>
+                    <a href="Where_Did_You_Sleep_Last_Night__Solo_Acoustic_Demo_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">21.</span>
+                    <span class="track-title">Polly (Solo Acoustic Demo)</span>
+                    <a href="Polly__Solo_Acoustic_Demo_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">22.</span>
+                    <span class="track-title">Dive (Demo)</span>
+                    <a href="Dive__Demo_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">23.</span>
+                    <span class="track-title">Downer (Live)</span>
+                    <a href="Downer__Live_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">24.</span>
+                    <span class="track-title">They Hung Him On A Cross (Demo)</span>
+                    <a href="They_Hung_Him_On_A_Cross__Demo_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">25.</span>
+                    <span class="track-title">Raunchola/Moby Dick (Live)</span>
+                    <a href="Raunchola_Moby_Dick__Live_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">26.</span>
+                    <span class="track-title">Pen Cap Chew (Demo)</span>
+                    <a href="Pen_Cap_Chew__Demo_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">27.</span>
+                    <span class="track-title">Help Me, I'm Hungry (Live)</span>
+                    <a href="Help_Me__I_m_Hungry__Live_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">28.</span>
+                    <span class="track-title">About A Girl (Home Demo)</span>
+                    <a href="About_A_Girl__Home_Demo_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">29.</span>
+                    <span class="track-title">Beans (Solo Acoustic)</span>
+                    <a href="Beans__Solo_Acoustic_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">30.</span>
+                    <span class="track-title">White Lace And Strange (Live)</span>
+                    <a href="White_Lace_And_Strange__Live_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">31.</span>
+                    <span class="track-title">Clean Up Before She Comes (Solo Acoustic)</span>
+                    <a href="Clean_Up_Before_She_Comes__Solo_Acoustic_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">32.</span>
+                    <span class="track-title">Mrs. Butterworth (1988 Rehearsal)</span>
+                    <a href="Mrs__Butterworth__1988_Rehearsal_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">33.</span>
+                    <span class="track-title">Polly (Demo)</span>
+                    <a href="Polly__Demo_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">34.</span>
+                    <span class="track-title">Anorexorcist (Live)</span>
+                    <a href="Anorexorcist__Live_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">35.</span>
+                    <span class="track-title">If You Must (Demo)</span>
+                    <a href="If_You_Must__Demo_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">36.</span>
+                    <span class="track-title">Blandest (Demo)</span>
+                    <a href="Blandest__Demo_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">37.</span>
+                    <span class="track-title">Heartbreaker (Live)</span>
+                    <a href="Heartbreaker__Live_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">38.</span>
+                    <span class="track-title">Floyd The Barber (Live)</span>
+                    <a href="Floyd_The_Barber__Live_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">39.</span>
+                    <span class="track-title">Even In His Youth (Demo)</span>
+                    <a href="Even_In_His_Youth__Demo_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">40.</span>
+                    <span class="track-title">Grey Goose (Instrumental Demo)</span>
+                    <a href="Grey_Goose__Instrumental_Demo_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">41.</span>
+                    <span class="track-title">Ain't It A Shame (Demo)</span>
+                    <a href="Ain_t_It_A_Shame__Demo_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">42.</span>
+                    <span class="track-title">Token Eastern Song (Demo)</span>
+                    <a href="Token_Eastern_Song__Demo_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">43.</span>
+                    <span class="track-title">Don't Want It All (Solo Acoustic)</span>
+                    <a href="Don_t_Want_It_All__Solo_Acoustic_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">44.</span>
+                    <span class="track-title">Sappy</span>
+                    <a href="Sappy.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">45.</span>
+                    <span class="track-title">Rape Me (Solo Acoustic)</span>
+                    <a href="Rape_Me__Solo_Acoustic_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">46.</span>
+                    <span class="track-title">I Hate Myself And Want To Die (Demo)</span>
+                    <a href="I_Hate_Myself_And_Want_To_Die__Demo_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">47.</span>
+                    <span class="track-title">Serve The Servants (Solo Acoustic)</span>
+                    <a href="Serve_The_Servants__Solo_Acoustic_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">48.</span>
+                    <span class="track-title">Do Re Mi (Home Demo)</span>
+                    <a href="Do_Re_Mi__Home_Demo_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">49.</span>
+                    <span class="track-title">You Know You're Right (Home Demo)</span>
+                    <a href="You_Know_You_re_Right__Home_Demo_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">50.</span>
+                    <span class="track-title">Jesus Doesn't Want Me For A Sunbeam (Rehearsal Demo)</span>
+                    <a href="Jesus_Doesn_t_Want_Me_For_A_Sunbeam__Rehearsal_Demo_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">51.</span>
+                    <span class="track-title">Milk It (Demo)</span>
+                    <a href="Milk_It__Demo_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">52.</span>
+                    <span class="track-title">Moist Vagina (Demo)</span>
+                    <a href="Moist_Vagina__Demo_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">53.</span>
+                    <span class="track-title">The Other Improv (Demo)</span>
+                    <a href="The_Other_Improv__Demo_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">54.</span>
+                    <span class="track-title">Rape Me (Demo)</span>
+                    <a href="Rape_Me__Demo_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">55.</span>
+                    <span class="track-title">Marigold</span>
+                    <a href="Marigold.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">56.</span>
+                    <span class="track-title">Heart Shaped Box (Demo)</span>
+                    <a href="Heart_Shaped_Box__Demo_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">57.</span>
+                    <span class="track-title">All Apologies (Home Demo)</span>
+                    <a href="All_Apologies__Home_Demo_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">58.</span>
+                    <span class="track-title">Pennyroyal Tea (Solo Acoustic)</span>
+                    <a href="Pennyroyal_Tea__Solo_Acoustic_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">59.</span>
+                    <span class="track-title">Gallons Of Rubbing Alcohol Flow Through The Strip</span>
+                    <a href="Gallons_Of_Rubbing_Alcohol_Flow_Through_The_Strip.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">60.</span>
+                    <span class="track-title">Scentless Apprentice (Rehearsal Demo)</span>
+                    <a href="Scentless_Apprentice__Rehearsal_Demo_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">61.</span>
+                    <span class="track-title">Very Ape (Solo Acoustic)</span>
+                    <a href="Very_Ape__Solo_Acoustic_.html" class="track-button">View Detail</a>
+                </div>
+            
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Adventure Time, Vol. 2 (Original Soundtrack) - Adventure Time</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .track-list {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 15px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .track-list ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .track-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px;
+            background-color: #f0f4f8;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .track-box:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        .track-number {
+            flex: 1;
+            font-size: 1.1rem;
+        }
+
+        .track-title {
+            flex: 2;
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        .track-button {
+            background-color: #007bff;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .track-button:hover {
+            background-color: #0056b3;
+        }
+
+        .navigation {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        .btn:focus {
+            outline: none;
+        }
+
+        /* Dark theme */
+        body.dark {
+            background-color: #333;
+            color: #f7f7f7;
+        }
+
+        body.dark .track-list {
+            background-color: #444;
+        }
+
+        body.dark .track-list .track-box {
+            background-color: #555;
+        }
+
+        body.dark .track-list .track-box:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        body.dark .navigation .btn:hover {
+            background-color: #0056b3;
+        }
+
+        body.dark .btn {
+            background-color: #28a745;
+        }
+    </style>
+</head>
+<script>
+    // Function to toggle the theme and store the preference in localStorage
+    function toggleStyle() {
+        document.body.classList.toggle("dark");
+        // Save the current theme state to localStorage
+        if (document.body.classList.contains("dark")) {
+            localStorage.setItem("theme", "dark");
+        } else {
+            localStorage.setItem("theme", "light");
+        }
+    }
+
+    // Check localStorage on page load and apply the saved theme
+    window.onload = function() {
+        const savedTheme = localStorage.getItem("theme");
+        // If theme is saved as 'dark', apply dark mode
+        if (savedTheme === "dark") {
+            document.body.classList.add("dark");
+        } else {
+            document.body.classList.remove("dark");
+        }
+    };
+</script>
+<body>
+    <div class="navigation">
+        <a class="btn" href="../../index.html">Go to Home Page</a>
+        <button onclick="toggleStyle()" class="btn">Change Theme</button>
+    </div>
+    <h1>Adventure Time, Vol. 2 (Original Soundtrack) - Adventure Time</h1>
+    <div class="track-list">
+        <p>Total Tracks: 40</p>
+        <div>
+            
+                <div class="track-box">
+                    <span class="track-number">1.</span>
+                    <span class="track-title">Rocky Road</span>
+                    <a href="Rocky_Road.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">2.</span>
+                    <span class="track-title">Wiz Buds</span>
+                    <a href="Wiz_Buds.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">3.</span>
+                    <span class="track-title">Lemonhope's Got Feet (feat. Justin Roiland)</span>
+                    <a href="Lemonhope_s_Got_Feet__feat__Justin_Roiland_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">4.</span>
+                    <span class="track-title">Dropdown Rainbow</span>
+                    <a href="Dropdown_Rainbow.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">5.</span>
+                    <span class="track-title">Three Nice Dudes (feat. John DiMaggio & Kumail Nanjiani)</span>
+                    <a href="Three_Nice_Dudes__feat__John_DiMaggio___Kumail_Nanjiani_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">6.</span>
+                    <span class="track-title">Good Little Girl (feat. Donald Glover, Madeleine Martin & Roz Ryan)</span>
+                    <a href="Good_Little_Girl__feat__Donald_Glover__Madeleine_Martin___Roz_Ryan_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">7.</span>
+                    <span class="track-title">Lonely Bones (feat. Hynden Walch)</span>
+                    <a href="Lonely_Bones__feat__Hynden_Walch_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">8.</span>
+                    <span class="track-title">Go Dentist</span>
+                    <a href="Go_Dentist.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">9.</span>
+                    <span class="track-title">Like a Rock</span>
+                    <a href="Like_a_Rock.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">10.</span>
+                    <span class="track-title">Fallen Ally (feat. Jeremy Shada & John DiMaggio)</span>
+                    <a href="Fallen_Ally__feat__Jeremy_Shada___John_DiMaggio_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">11.</span>
+                    <span class="track-title">Fireproof Beat (feat. Andy Milonakis)</span>
+                    <a href="Fireproof_Beat__feat__Andy_Milonakis_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">12.</span>
+                    <span class="track-title">Der Holle Rache Kocht in Meinem Herzen (feat. Jeremy Shada & Hynden Walch)</span>
+                    <a href="Der_Holle_Rache_Kocht_in_Meinem_Herzen__feat__Jeremy_Shada___Hynden_Walch_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">13.</span>
+                    <span class="track-title">Ice King and the Island Lady (feat. Riki Lindhome)</span>
+                    <a href="Ice_King_and_the_Island_Lady__feat__Riki_Lindhome_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">14.</span>
+                    <span class="track-title">Simon's Tale</span>
+                    <a href="Simon_s_Tale.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">15.</span>
+                    <span class="track-title">All I Need (feat. Peter Serafinowicz)</span>
+                    <a href="All_I_Need__feat__Peter_Serafinowicz_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">16.</span>
+                    <span class="track-title">Joshua's Final Message (feat. Kent Osborne & John DiMaggio) (Remix)</span>
+                    <a href="Joshua_s_Final_Message__feat__Kent_Osborne___John_DiMaggio___Remix_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">17.</span>
+                    <span class="track-title">Where Everybody Knows Your Name (feat. Tom Kenny)</span>
+                    <a href="Where_Everybody_Knows_Your_Name__feat__Tom_Kenny_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">18.</span>
+                    <span class="track-title">Baby's Building a Tower into Space (feat. Jeremy Shada)</span>
+                    <a href="Baby_s_Building_a_Tower_into_Space__feat__Jeremy_Shada_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">19.</span>
+                    <span class="track-title">All Gummed Up / All Warmed Up (feat. Jeremy Shada & John DiMaggio)</span>
+                    <a href="All_Gummed_Up___All_Warmed_Up__feat__Jeremy_Shada___John_DiMaggio_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">20.</span>
+                    <span class="track-title">Finn vs. Rap Bear (feat. Andy Samberg & Jeremy Shada)</span>
+                    <a href="Finn_vs__Rap_Bear__feat__Andy_Samberg___Jeremy_Shada_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">21.</span>
+                    <span class="track-title">Food Chain (feat. Jeremy Shada & Hynden Walch)</span>
+                    <a href="Food_Chain__feat__Jeremy_Shada___Hynden_Walch_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">22.</span>
+                    <span class="track-title">Bacon Pancakes (feat. John DiMaggio)</span>
+                    <a href="Bacon_Pancakes__feat__John_DiMaggio_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">23.</span>
+                    <span class="track-title">Fixing a Truck (feat. Al Yankovich & Jeremy Shada)</span>
+                    <a href="Fixing_a_Truck__feat__Al_Yankovich___Jeremy_Shada_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">24.</span>
+                    <span class="track-title">Booboo Sousa (feat. Jon Wurster)</span>
+                    <a href="Booboo_Sousa__feat__Jon_Wurster_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">25.</span>
+                    <span class="track-title">Oh Bmo (feat. Niki Yang)</span>
+                    <a href="Oh_Bmo__feat__Niki_Yang_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">26.</span>
+                    <span class="track-title">Remember You (feat. Olivia Olson & Tom Kenny)</span>
+                    <a href="Remember_You__feat__Olivia_Olson___Tom_Kenny_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">27.</span>
+                    <span class="track-title">To a Plant (feat. Jeremy Shada & John DiMaggio)</span>
+                    <a href="To_a_Plant__feat__Jeremy_Shada___John_DiMaggio_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">28.</span>
+                    <span class="track-title">Real Power (feat. Davey Johnson)</span>
+                    <a href="Real_Power__feat__Davey_Johnson_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">29.</span>
+                    <span class="track-title">Summer Swamp Boogie</span>
+                    <a href="Summer_Swamp_Boogie.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">30.</span>
+                    <span class="track-title">Call to the Universe (feat. Jeremy Shada)</span>
+                    <a href="Call_to_the_Universe__feat__Jeremy_Shada_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">31.</span>
+                    <span class="track-title">Oh Bubblegum</span>
+                    <a href="Oh_Bubblegum.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">32.</span>
+                    <span class="track-title">Political Rap (feat. John DiMaggio & Jeremy Shada)</span>
+                    <a href="Political_Rap__feat__John_DiMaggio___Jeremy_Shada_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">33.</span>
+                    <span class="track-title">Poor Little Lemonhope (feat. Justin Roiland)</span>
+                    <a href="Poor_Little_Lemonhope__feat__Justin_Roiland_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">34.</span>
+                    <span class="track-title">Love in the Darkness (feat. Jeremy Shada, Ashly Burch & Hynden Walch)</span>
+                    <a href="Love_in_the_Darkness__feat__Jeremy_Shada__Ashly_Burch___Hynden_Walch_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">35.</span>
+                    <span class="track-title">Sleepy Puppies (feat. Jeremy Shada)</span>
+                    <a href="Sleepy_Puppies__feat__Jeremy_Shada_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">36.</span>
+                    <span class="track-title">A Kingdom from a Spark (feat. Jessica DiCicco)</span>
+                    <a href="A_Kingdom_from_a_Spark__feat__Jessica_DiCicco_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">37.</span>
+                    <span class="track-title">Parts Unknown</span>
+                    <a href="Parts_Unknown.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">38.</span>
+                    <span class="track-title">Cant Get over You (feat. Jeremy Shada)</span>
+                    <a href="Cant_Get_over_You__feat__Jeremy_Shada_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">39.</span>
+                    <span class="track-title">Melons (feat. Jeremy Shada)</span>
+                    <a href="Melons__feat__Jeremy_Shada_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">40.</span>
+                    <span class="track-title">Little Brother (feat. Pendleton Ward & Thurop Van Orman)</span>
+                    <a href="Little_Brother__feat__Pendleton_Ward___Thurop_Van_Orman_.html" class="track-button">View Detail</a>
+                </div>
+            
+        </div>
+    </div>
+</body>
+</html>

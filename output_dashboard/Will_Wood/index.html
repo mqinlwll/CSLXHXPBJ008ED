@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will Wood</title>
+    <style>
+        /* Base Style */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            color: #444;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background-color: #FF6347;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #e53e3e;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .card a {
+            text-decoration: none;
+            color: #FF6347;
+            font-weight: bold;
+        }
+
+        .card a:hover {
+            color: #e53e3e;
+        }
+
+        /* Dark Mode */
+        body.dark {
+            background-color: #333;
+            color: #fff;
+        }
+
+        body.dark .btn {
+            background-color: #FFD700;
+        }
+
+        body.dark .btn:hover {
+            background-color: #FFC107;
+        }
+
+        body.dark .card {
+            background-color: #444;
+            border: 1px solid #555;
+        }
+
+        body.dark .card a {
+            color: #FFD700;
+        }
+
+        body.dark .card a:hover {
+            color: #FFC107;
+        }
+    </style>
+</head>
+<script>
+    // Function to toggle the theme and store the preference in localStorage
+    function toggleStyle() {
+        document.body.classList.toggle("dark");
+        // Save the current theme state to localStorage
+        if (document.body.classList.contains("dark")) {
+            localStorage.setItem("theme", "dark");
+        } else {
+            localStorage.setItem("theme", "light");
+        }
+    }
+
+    // Check localStorage on page load and apply the saved theme
+    window.onload = function() {
+        const savedTheme = localStorage.getItem("theme");
+        // If theme is saved as 'dark', apply dark mode
+        if (savedTheme === "dark") {
+            document.body.classList.add("dark");
+        } else {
+            document.body.classList.remove("dark");
+        }
+    };
+</script>
+<body>
+    <div class="navigation">
+        <a href="../index.html" class="btn">Go to Homepage</a>
+        <button onclick="toggleStyle()" class="btn">Change Theme</button>
+    </div>
+    <h1>Will Wood</h1>
+    <div class="grid">
+        
+        <div class="card">
+            <a href="Tomcat_Disposables/index.html">Tomcat Disposables</a>
+        </div>
+        
+        <div class="card">
+            <a href="Camp_Here___There__Campfire_Songs_Edition/index.html">Camp Here & There: Campfire Songs Edition</a>
+        </div>
+        
+        <div class="card">
+            <a href="The_Normal_Album/index.html">The Normal Album</a>
+        </div>
+        
+        <div class="card">
+            <a href="Laplace_s_Angel_-_2018_Live_in_Studio_Demo/index.html">Laplace's Angel - 2018 Live in Studio Demo</a>
+        </div>
+        
+        <div class="card">
+            <a href="The_New_Normal___The_Normal_Album_2024_Edit_/index.html">The New Normal! (The Normal Album 2024 Edit)</a>
+        </div>
+        
+        <div class="card">
+            <a href="I___Me___Myself__2018_Live_in_Studio_Demo_/index.html">I / Me / Myself (2018 Live in Studio Demo)</a>
+        </div>
+        
+        <div class="card">
+            <a href="IN_CASE_I_DIE_/index.html">IN CASE I DIE:</a>
+        </div>
+        
+        <div class="card">
+            <a href="White_Noise/index.html">White Noise</a>
+        </div>
+        
+        <div class="card">
+            <a href="Sex__Drugs__Rock__n__Roll/index.html">Sex, Drugs, Rock 'n' Roll</a>
+        </div>
+        
+        <div class="card">
+            <a href="Cicada_Days/index.html">Cicada Days</a>
+        </div>
+        
+        <div class="card">
+            <a href="You_Liked_This__Okay__Computer__/index.html">You Liked This (Okay, Computer!)</a>
+        </div>
+        
+    </div>
+</body>
+</html>

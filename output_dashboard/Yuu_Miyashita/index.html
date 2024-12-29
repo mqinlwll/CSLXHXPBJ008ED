@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yuu Miyashita</title>
+    <style>
+        /* Base Style */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            color: #444;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background-color: #FF6347;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #e53e3e;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .card a {
+            text-decoration: none;
+            color: #FF6347;
+            font-weight: bold;
+        }
+
+        .card a:hover {
+            color: #e53e3e;
+        }
+
+        /* Dark Mode */
+        body.dark {
+            background-color: #333;
+            color: #fff;
+        }
+
+        body.dark .btn {
+            background-color: #FFD700;
+        }
+
+        body.dark .btn:hover {
+            background-color: #FFC107;
+        }
+
+        body.dark .card {
+            background-color: #444;
+            border: 1px solid #555;
+        }
+
+        body.dark .card a {
+            color: #FFD700;
+        }
+
+        body.dark .card a:hover {
+            color: #FFC107;
+        }
+    </style>
+</head>
+<script>
+    // Function to toggle the theme and store the preference in localStorage
+    function toggleStyle() {
+        document.body.classList.toggle("dark");
+        // Save the current theme state to localStorage
+        if (document.body.classList.contains("dark")) {
+            localStorage.setItem("theme", "dark");
+        } else {
+            localStorage.setItem("theme", "light");
+        }
+    }
+
+    // Check localStorage on page load and apply the saved theme
+    window.onload = function() {
+        const savedTheme = localStorage.getItem("theme");
+        // If theme is saved as 'dark', apply dark mode
+        if (savedTheme === "dark") {
+            document.body.classList.add("dark");
+        } else {
+            document.body.classList.remove("dark");
+        }
+    };
+</script>
+<body>
+    <div class="navigation">
+        <a href="../index.html" class="btn">Go to Homepage</a>
+        <button onclick="toggleStyle()" class="btn">Change Theme</button>
+    </div>
+    <h1>Yuu Miyashita</h1>
+    <div class="grid">
+        
+        <div class="card">
+            <a href="Kimi_wo_Ronjitai/index.html">Kimi wo Ronjitai</a>
+        </div>
+        
+        <div class="card">
+            <a href="Akumu_no_Lullaby/index.html">Akumu no Lullaby</a>
+        </div>
+        
+        <div class="card">
+            <a href="Onamida_Chodai/index.html">Onamida Chodai</a>
+        </div>
+        
+        <div class="card">
+            <a href="Maria__Cover_/index.html">Maria (Cover)</a>
+        </div>
+        
+        <div class="card">
+            <a href="_N_A_A__/index.html">"N A A."</a>
+        </div>
+        
+        <div class="card">
+            <a href="Kuruoze/index.html">Kuruoze</a>
+        </div>
+        
+        <div class="card">
+            <a href="Decorative/index.html">Decorative</a>
+        </div>
+        
+        <div class="card">
+            <a href="Koufukuron_TV_Size_Ver_/index.html">Koufukuron TV Size Ver.</a>
+        </div>
+        
+        <div class="card">
+            <a href="Koufukuron/index.html">Koufukuron</a>
+        </div>
+        
+        <div class="card">
+            <a href="p_h_/index.html">p.h.</a>
+        </div>
+        
+        <div class="card">
+            <a href="Mitsuketa_Tobira_wa/index.html">Mitsuketa Tobira wa</a>
+        </div>
+        
+        <div class="card">
+            <a href="Grain/index.html">Grain</a>
+        </div>
+        
+        <div class="card">
+            <a href="Galleria__Cover_/index.html">Galleria (Cover)</a>
+        </div>
+        
+        <div class="card">
+            <a href="Parasite_Piano/index.html">Parasite Piano</a>
+        </div>
+        
+        <div class="card">
+            <a href="Hakuu_no_Moto/index.html">Hakuu no Moto</a>
+        </div>
+        
+        <div class="card">
+            <a href="Sabitsuku_Made/index.html">Sabitsuku Made</a>
+        </div>
+        
+        <div class="card">
+            <a href="Ithna/index.html">Ithna</a>
+        </div>
+        
+        <div class="card">
+            <a href="Non-Breath_Oblige__Cover_/index.html">Non-Breath Oblige (Cover)</a>
+        </div>
+        
+        <div class="card">
+            <a href="Coquetterie_Dancer/index.html">Coquetterie Dancer</a>
+        </div>
+        
+        <div class="card">
+            <a href="Kilmer__Cover_/index.html">Kilmer (Cover)</a>
+        </div>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>From The Muddy Banks Of The Wishkah (Live) - Nirvana</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .track-list {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 15px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .track-list ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .track-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px;
+            background-color: #f0f4f8;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .track-box:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        .track-number {
+            flex: 1;
+            font-size: 1.1rem;
+        }
+
+        .track-title {
+            flex: 2;
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        .track-button {
+            background-color: #007bff;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .track-button:hover {
+            background-color: #0056b3;
+        }
+
+        .navigation {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        .btn:focus {
+            outline: none;
+        }
+
+        /* Dark theme */
+        body.dark {
+            background-color: #333;
+            color: #f7f7f7;
+        }
+
+        body.dark .track-list {
+            background-color: #444;
+        }
+
+        body.dark .track-list .track-box {
+            background-color: #555;
+        }
+
+        body.dark .track-list .track-box:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        body.dark .navigation .btn:hover {
+            background-color: #0056b3;
+        }
+
+        body.dark .btn {
+            background-color: #28a745;
+        }
+    </style>
+</head>
+<script>
+    // Function to toggle the theme and store the preference in localStorage
+    function toggleStyle() {
+        document.body.classList.toggle("dark");
+        // Save the current theme state to localStorage
+        if (document.body.classList.contains("dark")) {
+            localStorage.setItem("theme", "dark");
+        } else {
+            localStorage.setItem("theme", "light");
+        }
+    }
+
+    // Check localStorage on page load and apply the saved theme
+    window.onload = function() {
+        const savedTheme = localStorage.getItem("theme");
+        // If theme is saved as 'dark', apply dark mode
+        if (savedTheme === "dark") {
+            document.body.classList.add("dark");
+        } else {
+            document.body.classList.remove("dark");
+        }
+    };
+</script>
+<body>
+    <div class="navigation">
+        <a class="btn" href="../../index.html">Go to Home Page</a>
+        <button onclick="toggleStyle()" class="btn">Change Theme</button>
+    </div>
+    <h1>From The Muddy Banks Of The Wishkah (Live) - Nirvana</h1>
+    <div class="track-list">
+        <p>Total Tracks: 17</p>
+        <div>
+            
+                <div class="track-box">
+                    <span class="track-number">1.</span>
+                    <span class="track-title">Sliver (Live In Springfield, MA., November 10, 1993)</span>
+                    <a href="Sliver__Live_In_Springfield__MA___November_10__1993_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">2.</span>
+                    <span class="track-title">Milk It (Live In Seattle, WA., January 5, 1994)</span>
+                    <a href="Milk_It__Live_In_Seattle__WA___January_5__1994_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">3.</span>
+                    <span class="track-title">Spank Thru (Live In Rome, Italy, November 19, 1991)</span>
+                    <a href="Spank_Thru__Live_In_Rome__Italy__November_19__1991_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">4.</span>
+                    <span class="track-title">Been A Son (Live In Amsterdam, Netherlands/1991)</span>
+                    <a href="Been_A_Son__Live_In_Amsterdam__Netherlands_1991_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">5.</span>
+                    <span class="track-title">Polly (Live At London Astoria, UK, December 3, 1989)</span>
+                    <a href="Polly__Live_At_London_Astoria__UK__December_3__1989_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">6.</span>
+                    <span class="track-title">Drain You (Live At Del Mar Fairgrounds, CA., December 28, 1991)</span>
+                    <a href="Drain_You__Live_At_Del_Mar_Fairgrounds__CA___December_28__1991_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">7.</span>
+                    <span class="track-title">Scentless Apprentice (Live In Seattle, WA., December 13, 1993)</span>
+                    <a href="Scentless_Apprentice__Live_In_Seattle__WA___December_13__1993_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">8.</span>
+                    <span class="track-title">Smells Like Teen Spirit (Live In Del Mar, California/1991)</span>
+                    <a href="Smells_Like_Teen_Spirit__Live_In_Del_Mar__California_1991_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">9.</span>
+                    <span class="track-title">Lithium (Live In Amsterdam, Netherlands/1991)</span>
+                    <a href="Lithium__Live_In_Amsterdam__Netherlands_1991_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">10.</span>
+                    <span class="track-title">Blew (Live In Amsterdam, Netherlands/1991)</span>
+                    <a href="Blew__Live_In_Amsterdam__Netherlands_1991_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">11.</span>
+                    <span class="track-title">Tourette's (Live At Reading Festival, UK, August 30, 1992)</span>
+                    <a href="Tourette_s__Live_At_Reading_Festival__UK__August_30__1992_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">12.</span>
+                    <span class="track-title">School (Live In Amsterdam, Netherlands/1991)</span>
+                    <a href="School__Live_In_Amsterdam__Netherlands_1991_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">13.</span>
+                    <span class="track-title">Negative Creep (Live In Seattle, WA., October 31, 1991)</span>
+                    <a href="Negative_Creep__Live_In_Seattle__WA___October_31__1991_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">14.</span>
+                    <span class="track-title">Aneurysm (Live In Del Mar, California/1991)</span>
+                    <a href="Aneurysm__Live_In_Del_Mar__California_1991_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">15.</span>
+                    <span class="track-title">Breed (Live At London Astoria, UK, December 3, 1989)</span>
+                    <a href="Breed__Live_At_London_Astoria__UK__December_3__1989_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">16.</span>
+                    <span class="track-title">Heart-Shaped Box (Live In Los Angeles, CA, December 30, 1993)</span>
+                    <a href="Heart-Shaped_Box__Live_In_Los_Angeles__CA__December_30__1993_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">17.</span>
+                    <span class="track-title">Intro (Live At London Astoria, UK, December 3, 1989)</span>
+                    <a href="Intro__Live_At_London_Astoria__UK__December_3__1989_.html" class="track-button">View Detail</a>
+                </div>
+            
+        </div>
+    </div>
+</body>
+</html>

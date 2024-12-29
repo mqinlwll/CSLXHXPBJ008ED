@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixies</title>
+    <style>
+        /* Base Style */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            color: #444;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background-color: #FF6347;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #e53e3e;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .card a {
+            text-decoration: none;
+            color: #FF6347;
+            font-weight: bold;
+        }
+
+        .card a:hover {
+            color: #e53e3e;
+        }
+
+        /* Dark Mode */
+        body.dark {
+            background-color: #333;
+            color: #fff;
+        }
+
+        body.dark .btn {
+            background-color: #FFD700;
+        }
+
+        body.dark .btn:hover {
+            background-color: #FFC107;
+        }
+
+        body.dark .card {
+            background-color: #444;
+            border: 1px solid #555;
+        }
+
+        body.dark .card a {
+            color: #FFD700;
+        }
+
+        body.dark .card a:hover {
+            color: #FFC107;
+        }
+    </style>
+</head>
+<script>
+    // Function to toggle the theme and store the preference in localStorage
+    function toggleStyle() {
+        document.body.classList.toggle("dark");
+        // Save the current theme state to localStorage
+        if (document.body.classList.contains("dark")) {
+            localStorage.setItem("theme", "dark");
+        } else {
+            localStorage.setItem("theme", "light");
+        }
+    }
+
+    // Check localStorage on page load and apply the saved theme
+    window.onload = function() {
+        const savedTheme = localStorage.getItem("theme");
+        // If theme is saved as 'dark', apply dark mode
+        if (savedTheme === "dark") {
+            document.body.classList.add("dark");
+        } else {
+            document.body.classList.remove("dark");
+        }
+    };
+</script>
+<body>
+    <div class="navigation">
+        <a href="../index.html" class="btn">Go to Homepage</a>
+        <button onclick="toggleStyle()" class="btn">Change Theme</button>
+    </div>
+    <h1>Pixies</h1>
+    <div class="grid">
+        
+        <div class="card">
+            <a href="Monkey_Gone_to_Heaven/index.html">Monkey Gone to Heaven</a>
+        </div>
+        
+        <div class="card">
+            <a href="Live_From_the_Fallout_Shelter__1986/index.html">Live From the Fallout Shelter, 1986</a>
+        </div>
+        
+        <div class="card">
+            <a href="You_re_So_Impatient/index.html">You're So Impatient</a>
+        </div>
+        
+        <div class="card">
+            <a href="Wave_of_Mutilation__Best_of_Pixies/index.html">Wave of Mutilation: Best of Pixies</a>
+        </div>
+        
+        <div class="card">
+            <a href="Doolittle_25__B-Sides__Peel_Sessions_And_Demos/index.html">Doolittle 25: B-Sides, Peel Sessions And Demos</a>
+        </div>
+        
+        <div class="card">
+            <a href="Oyster_Beds/index.html">Oyster Beds</a>
+        </div>
+        
+        <div class="card">
+            <a href="Planet_Of_Sound/index.html">Planet Of Sound</a>
+        </div>
+        
+        <div class="card">
+            <a href="The_Night_the_Zombies_Came/index.html">The Night the Zombies Came</a>
+        </div>
+        
+        <div class="card">
+            <a href="Mambo_Sun/index.html">Mambo Sun</a>
+        </div>
+        
+        <div class="card">
+            <a href="Trompe_le_Monde/index.html">Trompe le Monde</a>
+        </div>
+        
+        <div class="card">
+            <a href="Beneath_the_Eyrie__Deluxe_/index.html">Beneath the Eyrie (Deluxe)</a>
+        </div>
+        
+        <div class="card">
+            <a href="Crystal_Closet_Queen/index.html">Crystal Closet Queen</a>
+        </div>
+        
+        <div class="card">
+            <a href="Debaser/index.html">Debaser</a>
+        </div>
+        
+        <div class="card">
+            <a href="Here_Comes_Your_Man/index.html">Here Comes Your Man</a>
+        </div>
+        
+        <div class="card">
+            <a href="Death_to_the_Pixies/index.html">Death to the Pixies</a>
+        </div>
+        
+        <div class="card">
+            <a href="There_s_A_Moon_On/index.html">There's A Moon On</a>
+        </div>
+        
+        <div class="card">
+            <a href="Human_Crime/index.html">Human Crime</a>
+        </div>
+        
+        <div class="card">
+            <a href="Vault_of_Heaven/index.html">Vault of Heaven</a>
+        </div>
+        
+        <div class="card">
+            <a href="Complete_B_Sides/index.html">Complete B Sides</a>
+        </div>
+        
+        <div class="card">
+            <a href="Chicken/index.html">Chicken</a>
+        </div>
+        
+        <div class="card">
+            <a href="Dig_for_Fire/index.html">Dig for Fire</a>
+        </div>
+        
+        <div class="card">
+            <a href="Surfer_Rosa__2007_Remaster_/index.html">Surfer Rosa (2007 Remaster)</a>
+        </div>
+        
+        <div class="card">
+            <a href="Velouria/index.html">Velouria</a>
+        </div>
+        
+        <div class="card">
+            <a href="Pixies_at_the_BBC__1988-91/index.html">Pixies at the BBC, 1988-91</a>
+        </div>
+        
+        <div class="card">
+            <a href="Dregs_of_the_Wine/index.html">Dregs of the Wine</a>
+        </div>
+        
+        <div class="card">
+            <a href="Doggerel/index.html">Doggerel</a>
+        </div>
+        
+        <div class="card">
+            <a href="Head_Carrier/index.html">Head Carrier</a>
+        </div>
+        
+        <div class="card">
+            <a href="Hear_Me_Out/index.html">Hear Me Out</a>
+        </div>
+        
+        <div class="card">
+            <a href="Indie_Cindy/index.html">Indie Cindy</a>
+        </div>
+        
+        <div class="card">
+            <a href="Doolittle/index.html">Doolittle</a>
+        </div>
+        
+        <div class="card">
+            <a href="Bossanova/index.html">Bossanova</a>
+        </div>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Dashboard</title>
+    <style>
+        /* Base Style */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            color: #444;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background-color: #FF6347;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #e53e3e;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .card a {
+            text-decoration: none;
+            color: #FF6347;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .card a:hover {
+            color: #e53e3e;
+        }
+
+        /* Dark Mode */
+        body.dark {
+            background-color: #333;
+            color: #fff;
+        }
+
+        body.dark .btn {
+            background-color: #FFD700;
+        }
+
+        body.dark .btn:hover {
+            background-color: #FFC107;
+        }
+
+        body.dark .card {
+            background-color: #444;
+            border: 1px solid #555;
+        }
+
+        body.dark .card a {
+            color: #FFD700;
+        }
+
+        body.dark .card a:hover {
+            color: #FFC107;
+        }
+    </style>
+</head>
+<script>
+    // Function to toggle the theme and store the preference in localStorage
+    function toggleStyle() {
+        document.body.classList.toggle("dark");
+        // Save the current theme state to localStorage
+        if (document.body.classList.contains("dark")) {
+            localStorage.setItem("theme", "dark");
+        } else {
+            localStorage.setItem("theme", "light");
+        }
+    }
+
+    // Check localStorage on page load and apply the saved theme
+    window.onload = function() {
+        const savedTheme = localStorage.getItem("theme");
+        // If theme is saved as 'dark', apply dark mode
+        if (savedTheme === "dark") {
+            document.body.classList.add("dark");
+        } else {
+            document.body.classList.remove("dark");
+        }
+    };
+</script>
+<body>
+    <div class="navigation">
+        <a href="index.html" class="btn">Go to Homepage</a>
+        <button onclick="toggleStyle()" class="btn">Change Theme</button>
+    </div>
+    <h1>Artists</h1>
+    <div class="grid">
+        
+        <div class="card">
+            <a href="The_Directors/index.html">The Directors</a>
+        </div>
+        
+        <div class="card">
+            <a href="Beat_Nik_Five/index.html">Beat Nik Five</a>
+        </div>
+        
+        <div class="card">
+            <a href="Johnny_Django/index.html">Johnny Django</a>
+        </div>
+        
+        <div class="card">
+            <a href="Pulp_No_Pulp/index.html">Pulp No Pulp</a>
+        </div>
+        
+        <div class="card">
+            <a href="Replicators/index.html">Replicators</a>
+        </div>
+        
+        <div class="card">
+            <a href="TV_Themes_Orchestra/index.html">TV Themes Orchestra</a>
+        </div>
+        
+        <div class="card">
+            <a href="Outriders/index.html">Outriders</a>
+        </div>
+        
+        <div class="card">
+            <a href="Pete_Green_Selection/index.html">Pete Green Selection</a>
+        </div>
+        
+        <div class="card">
+            <a href="Funkology/index.html">Funkology</a>
+        </div>
+        
+        <div class="card">
+            <a href="Blaxploitation/index.html">Blaxploitation</a>
+        </div>
+        
+        <div class="card">
+            <a href="Bobby_Smooth/index.html">Bobby Smooth</a>
+        </div>
+        
+        <div class="card">
+            <a href="Ledbetter/index.html">Ledbetter</a>
+        </div>
+        
+        <div class="card">
+            <a href="Memphis_Bell/index.html">Memphis Bell</a>
+        </div>
+        
+        <div class="card">
+            <a href="Tarantino_Rodrigues/index.html">Tarantino Rodrigues</a>
+        </div>
+        
+        <div class="card">
+            <a href="Leo_Sanchez/index.html">Leo Sanchez</a>
+        </div>
+        
+        <div class="card">
+            <a href="Surf_Boys/index.html">Surf Boys</a>
+        </div>
+        
+        <div class="card">
+            <a href="The_Djet_Set/index.html">The Djet Set</a>
+        </div>
+        
+        <div class="card">
+            <a href="Lightning_Strikes/index.html">Lightning Strikes</a>
+        </div>
+        
+        <div class="card">
+            <a href="Jim_Hornsby/index.html">Jim Hornsby</a>
+        </div>
+        
+        <div class="card">
+            <a href="Spagghetti_Western_Orchestra/index.html">Spagghetti Western Orchestra</a>
+        </div>
+        
+        <div class="card">
+            <a href="Screen_Gems_Orchestra/index.html">Screen Gems Orchestra</a>
+        </div>
+        
+        <div class="card">
+            <a href="Two_Tone_Mods/index.html">Two Tone Mods</a>
+        </div>
+        
+        <div class="card">
+            <a href="Django_Jones/index.html">Django Jones</a>
+        </div>
+        
+        <div class="card">
+            <a href="Sergio_Leone_Project/index.html">Sergio Leone Project</a>
+        </div>
+        
+        <div class="card">
+            <a href="Honey_Wilson/index.html">Honey Wilson</a>
+        </div>
+        
+        <div class="card">
+            <a href="Julio_Rodrigez/index.html">Julio Rodrigez</a>
+        </div>
+        
+        <div class="card">
+            <a href="Izzy_Bardot/index.html">Izzy Bardot</a>
+        </div>
+        
+        <div class="card">
+            <a href="Uma_Juma/index.html">Uma Juma</a>
+        </div>
+        
+        <div class="card">
+            <a href="The_Jazz_Knights/index.html">The Jazz Knights</a>
+        </div>
+        
+        <div class="card">
+            <a href="Le_Strade/index.html">Le Strade</a>
+        </div>
+        
+        <div class="card">
+            <a href="Kim_Circle/index.html">Kim Circle</a>
+        </div>
+        
+        <div class="card">
+            <a href="Tommy_Edwards/index.html">Tommy Edwards</a>
+        </div>
+        
+        <div class="card">
+            <a href="Sam_Cooke/index.html">Sam Cooke</a>
+        </div>
+        
+        <div class="card">
+            <a href="The_Contours/index.html">The Contours</a>
+        </div>
+        
+        <div class="card">
+            <a href="Lavern_Baker/index.html">Lavern Baker</a>
+        </div>
+        
+        <div class="card">
+            <a href="Quincy_Jones/index.html">Quincy Jones</a>
+        </div>
+        
+        <div class="card">
+            <a href="Etta_James/index.html">Etta James</a>
+        </div>
+        
+        <div class="card">
+            <a href="Ray_Charles/index.html">Ray Charles</a>
+        </div>
+        
+        <div class="card">
+            <a href="The_Clovers/index.html">The Clovers</a>
+        </div>
+        
+        <div class="card">
+            <a href="Esther_Phillips/index.html">Esther Phillips</a>
+        </div>
+        
+        <div class="card">
+            <a href="Frankie_Valli___The_Four_Seasons/index.html">Frankie Valli & The Four Seasons</a>
+        </div>
+        
+        <div class="card">
+            <a href="Ben_E__King/index.html">Ben E. King</a>
+        </div>
+        
+        <div class="card">
+            <a href="Gladys_Knight___The_Pips/index.html">Gladys Knight & The Pips</a>
+        </div>
+        
+        <div class="card">
+            <a href="Ben_E__King___The_Drifters/index.html">Ben E. King & The Drifters</a>
+        </div>
+        
+        <div class="card">
+            <a href="Lee_Andrews___The_Hearts/index.html">Lee Andrews & The Hearts</a>
+        </div>
+        
+        <div class="card">
+            <a href="Clyde_McPhatter/index.html">Clyde McPhatter</a>
+        </div>
+        
+        <div class="card">
+            <a href="Little_Stevie_Wonder/index.html">Little Stevie Wonder</a>
+        </div>
+        
+        <div class="card">
+            <a href="Ike___Tina_Turner/index.html">Ike & Tina Turner</a>
+        </div>
+        
+        <div class="card">
+            <a href="Aretha_Franklin/index.html">Aretha Franklin</a>
+        </div>
+        
+        <div class="card">
+            <a href="James_Brown/index.html">James Brown</a>
+        </div>
+        
+        <div class="card">
+            <a href="The_Teddy_Bears/index.html">The Teddy Bears</a>
+        </div>
+        
+        <div class="card">
+            <a href="Jackie_Wilson/index.html">Jackie Wilson</a>
+        </div>
+        
+        <div class="card">
+            <a href="Martha___The_Vandellas/index.html">Martha & The Vandellas</a>
+        </div>
+        
+        <div class="card">
+            <a href="Gene_Chandler/index.html">Gene Chandler</a>
+        </div>
+        
+        <div class="card">
+            <a href="The_Platters/index.html">The Platters</a>
+        </div>
+        
+        <div class="card">
+            <a href="The_Miracles/index.html">The Miracles</a>
+        </div>
+        
+        <div class="card">
+            <a href="Mary_Wells/index.html">Mary Wells</a>
+        </div>
+        
+        <div class="card">
+            <a href="Solomon_Burke/index.html">Solomon Burke</a>
+        </div>
+        
+        <div class="card">
+            <a href="Benny_Spellman/index.html">Benny Spellman</a>
+        </div>
+        
+        <div class="card">
+            <a href="The_Coasters/index.html">The Coasters</a>
+        </div>
+        
+        <div class="card">
+            <a href="B_B__King/index.html">B.B. King</a>
+        </div>
+        
+        <div class="card">
+            <a href="The_Supremes_With_Diana_Ross/index.html">The Supremes With Diana Ross</a>
+        </div>
+        
+        <div class="card">
+            <a href="Marvin_Gaye/index.html">Marvin Gaye</a>
+        </div>
+        
+        <div class="card">
+            <a href="The_Marvelettes/index.html">The Marvelettes</a>
+        </div>
+        
+        <div class="card">
+            <a href="Smokey_Robinson___The_Miracles/index.html">Smokey Robinson & The Miracles</a>
+        </div>
+        
+        <div class="card">
+            <a href="The_Everly_Brothers/index.html">The Everly Brothers</a>
+        </div>
+        
+        <div class="card">
+            <a href="Barrett_Strong/index.html">Barrett Strong</a>
+        </div>
+        
+        <div class="card">
+            <a href="Dinah_Washington/index.html">Dinah Washington</a>
+        </div>
+        
+        <div class="card">
+            <a href="Jerry_Butler___The_Impressions/index.html">Jerry Butler & The Impressions</a>
+        </div>
+        
+        <div class="card">
+            <a href="Little_Willie_John/index.html">Little Willie John</a>
+        </div>
+        
+        <div class="card">
+            <a href="The_Shirelles/index.html">The Shirelles</a>
+        </div>
+        
+        <div class="card">
+            <a href="Jimmy_Ruffin/index.html">Jimmy Ruffin</a>
+        </div>
+        
+        <div class="card">
+            <a href="Brook_Benton/index.html">Brook Benton</a>
+        </div>
+        
+        <div class="card">
+            <a href="Steampianist/index.html">Steampianist</a>
+        </div>
+        
+        <div class="card">
+            <a href="Adventure_Time/index.html">Adventure Time</a>
+        </div>
+        
+        <div class="card">
+            <a href="Tally_Hall/index.html">Tally Hall</a>
+        </div>
+        
+        <div class="card">
+            <a href="Ghost_and_Pals/index.html">Ghost and Pals</a>
+        </div>
+        
+        <div class="card">
+            <a href="Vial/index.html">Vial</a>
+        </div>
+        
+        <div class="card">
+            <a href="Shiro_Sagisu/index.html">Shiro Sagisu</a>
+        </div>
+        
+        <div class="card">
+            <a href="Yoko_Takahashi/index.html">Yoko Takahashi</a>
+        </div>
+        
+        <div class="card">
+            <a href="Hikaru_Utada/index.html">Hikaru Utada</a>
+        </div>
+        
+        <div class="card">
+            <a href="Kotono_Mistuishi/index.html">Kotono Mistuishi</a>
+        </div>
+        
+        <div class="card">
+            <a href="Megumi_Hayashibara/index.html">Megumi Hayashibara</a>
+        </div>
+        
+        <div class="card">
+            <a href="Arianne/index.html">Arianne</a>
+        </div>
+        
+        <div class="card">
+            <a href="Loren/index.html">Loren</a>
+        </div>
+        
+        <div class="card">
+            <a href="MALi/index.html">MALi</a>
+        </div>
+        
+        <div class="card">
+            <a href="Dream_Nails/index.html">Dream Nails</a>
+        </div>
+        
+        <div class="card">
+            <a href="Destructo_Disk/index.html">Destructo Disk</a>
+        </div>
+        
+        <div class="card">
+            <a href="Urara__ChoQMay__with_meiyo/index.html">Urara (ChoQMay) with meiyo</a>
+        </div>
+        
+        <div class="card">
+            <a href="My_Chemical_Romance/index.html">My Chemical Romance</a>
+        </div>
+        
+        <div class="card">
+            <a href="Nirvana/index.html">Nirvana</a>
+        </div>
+        
+        <div class="card">
+            <a href="Imogen_Heap/index.html">Imogen Heap</a>
+        </div>
+        
+        <div class="card">
+            <a href="TV_Girl/index.html">TV Girl</a>
+        </div>
+        
+        <div class="card">
+            <a href="Will_Wood/index.html">Will Wood</a>
+        </div>
+        
+        <div class="card">
+            <a href="Will_Wood_and_the_Tapeworms/index.html">Will Wood and the Tapeworms</a>
+        </div>
+        
+        <div class="card">
+            <a href="Utsu-P/index.html">Utsu-P</a>
+        </div>
+        
+        <div class="card">
+            <a href="Utsu-P__Hatsune_Miku__Rime/index.html">Utsu-P; Hatsune Miku; Rime</a>
+        </div>
+        
+        <div class="card">
+            <a href="Utsu-P__Hatsune_Miku/index.html">Utsu-P; Hatsune Miku</a>
+        </div>
+        
+        <div class="card">
+            <a href="Utsu-P__Rose/index.html">Utsu-P; Rose</a>
+        </div>
+        
+        <div class="card">
+            <a href="Utsu-P__Ci_flower/index.html">Utsu-P; Ci flower</a>
+        </div>
+        
+        <div class="card">
+            <a href="Utsu-P__Coko__Rose/index.html">Utsu-P; Coko; Rose</a>
+        </div>
+        
+        <div class="card">
+            <a href="Utsu-P__Megpoid/index.html">Utsu-P; Megpoid</a>
+        </div>
+        
+        <div class="card">
+            <a href="Utsu-P__Kagamine_Rin/index.html">Utsu-P; Kagamine Rin</a>
+        </div>
+        
+        <div class="card">
+            <a href="Utsu-P__Rime/index.html">Utsu-P; Rime</a>
+        </div>
+        
+        <div class="card">
+            <a href="Utsu-P__Sekai/index.html">Utsu-P; Sekai</a>
+        </div>
+        
+        <div class="card">
+            <a href="Utsu-P__Kafu/index.html">Utsu-P; Kafu</a>
+        </div>
+        
+        <div class="card">
+            <a href="Utsu-P__Coko/index.html">Utsu-P; Coko</a>
+        </div>
+        
+        <div class="card">
+            <a href="Bo_Burnham/index.html">Bo Burnham</a>
+        </div>
+        
+        <div class="card">
+            <a href="Radiohead/index.html">Radiohead</a>
+        </div>
+        
+        <div class="card">
+            <a href="Deftones/index.html">Deftones</a>
+        </div>
+        
+        <div class="card">
+            <a href="Foster_The_People/index.html">Foster The People</a>
+        </div>
+        
+        <div class="card">
+            <a href="Gorillaz/index.html">Gorillaz</a>
+        </div>
+        
+        <div class="card">
+            <a href="Gorillaz_featuring_De_La_Soul/index.html">Gorillaz featuring De La Soul</a>
+        </div>
+        
+        <div class="card">
+            <a href="Glass_Animals/index.html">Glass Animals</a>
+        </div>
+        
+        <div class="card">
+            <a href="The_Dresden_Dolls/index.html">The Dresden Dolls</a>
+        </div>
+        
+        <div class="card">
+            <a href="Clean_Bandit/index.html">Clean Bandit</a>
+        </div>
+        
+        <div class="card">
+            <a href="Jack_Stauber_s_Micropop/index.html">Jack Stauber's Micropop</a>
+        </div>
+        
+        <div class="card">
+            <a href="Pixies/index.html">Pixies</a>
+        </div>
+        
+        <div class="card">
+            <a href="I_DONT_KNOW_HOW_BUT_THEY_FOUND_ME/index.html">I DONT KNOW HOW BUT THEY FOUND ME</a>
+        </div>
+        
+        <div class="card">
+            <a href="KikuoHana__Kikuo_to_Hanatan_/index.html">KikuoHana (Kikuo to Hanatan)</a>
+        </div>
+        
+        <div class="card">
+            <a href="Molchat_Doma/index.html">Molchat Doma</a>
+        </div>
+        
+        <div class="card">
+            <a href="Jack_Stauber/index.html">Jack Stauber</a>
+        </div>
+        
+        <div class="card">
+            <a href="syudou/index.html">syudou</a>
+        </div>
+        
+        <div class="card">
+            <a href="Vane_Lily/index.html">Vane Lily</a>
+        </div>
+        
+        <div class="card">
+            <a href="Yuu_Miyashita/index.html">Yuu Miyashita</a>
+        </div>
+        
+        <div class="card">
+            <a href="Yuu_Miyashita______/index.html">Yuu Miyashita; 煮ル果実</a>
+        </div>
+        
+        <div class="card">
+            <a href="Weezer/index.html">Weezer</a>
+        </div>
+        
+        <div class="card">
+            <a href="The_Caretaker/index.html">The Caretaker</a>
+        </div>
+        
+       
+    <!--Add card artist-->
+
+    </div>
+</body>
+</html>

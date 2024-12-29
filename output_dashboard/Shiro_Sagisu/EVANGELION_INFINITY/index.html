@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EVANGELION INFINITY - Shiro Sagisu</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .track-list {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 15px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .track-list ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .track-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px;
+            background-color: #f0f4f8;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .track-box:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        .track-number {
+            flex: 1;
+            font-size: 1.1rem;
+        }
+
+        .track-title {
+            flex: 2;
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        .track-button {
+            background-color: #007bff;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .track-button:hover {
+            background-color: #0056b3;
+        }
+
+        .navigation {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        .btn:focus {
+            outline: none;
+        }
+
+        /* Dark theme */
+        body.dark {
+            background-color: #333;
+            color: #f7f7f7;
+        }
+
+        body.dark .track-list {
+            background-color: #444;
+        }
+
+        body.dark .track-list .track-box {
+            background-color: #555;
+        }
+
+        body.dark .track-list .track-box:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        body.dark .navigation .btn:hover {
+            background-color: #0056b3;
+        }
+
+        body.dark .btn {
+            background-color: #28a745;
+        }
+    </style>
+</head>
+<script>
+    // Function to toggle the theme and store the preference in localStorage
+    function toggleStyle() {
+        document.body.classList.toggle("dark");
+        // Save the current theme state to localStorage
+        if (document.body.classList.contains("dark")) {
+            localStorage.setItem("theme", "dark");
+        } else {
+            localStorage.setItem("theme", "light");
+        }
+    }
+
+    // Check localStorage on page load and apply the saved theme
+    window.onload = function() {
+        const savedTheme = localStorage.getItem("theme");
+        // If theme is saved as 'dark', apply dark mode
+        if (savedTheme === "dark") {
+            document.body.classList.add("dark");
+        } else {
+            document.body.classList.remove("dark");
+        }
+    };
+</script>
+<body>
+    <div class="navigation">
+        <a class="btn" href="../../index.html">Go to Home Page</a>
+        <button onclick="toggleStyle()" class="btn">Change Theme</button>
+    </div>
+    <h1>EVANGELION INFINITY - Shiro Sagisu</h1>
+    <div class="track-list">
+        <p>Total Tracks: 46</p>
+        <div>
+            
+                <div class="track-box">
+                    <span class="track-number">1.</span>
+                    <span class="track-title">EM20 =clint eastwood= (shin)</span>
+                    <a href="EM20__clint_eastwood___shin_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">2.</span>
+                    <span class="track-title">Serenity Amongst the Turmoil (2012)</span>
+                    <a href="Serenity_Amongst_the_Turmoil__2012_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">3.</span>
+                    <span class="track-title">euro nerv optionA =tokyo III and timpani= (shin)</span>
+                    <a href="euro_nerv_optionA__tokyo_III_and_timpani___shin_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">4.</span>
+                    <span class="track-title">alterna blueprint CHOKKAKU guitars (shin)</span>
+                    <a href="alterna_blueprint_CHOKKAKU_guitars__shin_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">5.</span>
+                    <span class="track-title">EM20 suite 2017 (2017)</span>
+                    <a href="EM20_suite_2017__2017_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">6.</span>
+                    <span class="track-title">The Longest Day (2007)</span>
+                    <a href="The_Longest_Day__2007_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">7.</span>
+                    <span class="track-title">EM20 =wunder operation=</span>
+                    <a href="EM20__wunder_operation_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">8.</span>
+                    <span class="track-title">Sin From Genesis (2009)</span>
+                    <a href="Sin_From_Genesis__2009_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">9.</span>
+                    <span class="track-title">2EM36 orchestra only (shin)</span>
+                    <a href="2EM36_orchestra_only__shin_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">10.</span>
+                    <span class="track-title">Can't run away, Face it =EVA oriented Giant Swing= (shin)</span>
+                    <a href="Can_t_run_away__Face_it__EVA_oriented_Giant_Swing___shin_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">11.</span>
+                    <span class="track-title">ch alt1 proto (shin)</span>
+                    <a href="ch_alt1_proto__shin_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">12.</span>
+                    <span class="track-title">Akira Jimbo universe (shin)</span>
+                    <a href="Akira_Jimbo_universe__shin_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">13.</span>
+                    <span class="track-title">Battaille Decisive (2007)</span>
+                    <a href="Battaille_Decisive__2007_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">14.</span>
+                    <span class="track-title">Bataille d'Espace (2012)</span>
+                    <a href="Bataille_d_Espace__2012_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">15.</span>
+                    <span class="track-title">Spending Time in Preparation (1996)</span>
+                    <a href="Spending_Time_in_Preparation__1996_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">16.</span>
+                    <span class="track-title">E-16 normal rhythm (1998)</span>
+                    <a href="E-16_normal_rhythm__1998_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">17.</span>
+                    <span class="track-title">The Beast II (1996)</span>
+                    <a href="The_Beast_II__1996_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">18.</span>
+                    <span class="track-title">Strategie "Yashima" (2007)</span>
+                    <a href="Strategie__Yashima___2007_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">19.</span>
+                    <span class="track-title">E01-WithoutEricTrumpet_EWS_Amano&Kosei (2009)</span>
+                    <a href="E01-WithoutEricTrumpet_EWS_Amano_Kosei__2009_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">20.</span>
+                    <span class="track-title">EM20_alterna01~EM20_alterna03~EM20_alterna04 (2017)</span>
+                    <a href="EM20_alterna01_EM20_alterna03_EM20_alterna04__2017_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">21.</span>
+                    <span class="track-title">The Longest Day III (2007)</span>
+                    <a href="The_Longest_Day_III__2007_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">22.</span>
+                    <span class="track-title">euro nerv</span>
+                    <a href="euro_nerv.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">23.</span>
+                    <span class="track-title">DECISIVE BATTLE</span>
+                    <a href="DECISIVE_BATTLE.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">24.</span>
+                    <span class="track-title">E01_01_YoichiMurata_Session (2009)</span>
+                    <a href="E01_01_YoichiMurata_Session__2009_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">25.</span>
+                    <span class="track-title">E01_02_YoichiMurata_Session (2009)</span>
+                    <a href="E01_02_YoichiMurata_Session__2009_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">26.</span>
+                    <span class="track-title">Shiro'sBrassBand_TributeToBreckerBrothers (2009)</span>
+                    <a href="Shiro_sBrassBand_TributeToBreckerBrothers__2009_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">27.</span>
+                    <span class="track-title">all you need is love, Martin... (shin)</span>
+                    <a href="all_you_need_is_love__Martin_____shin_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">28.</span>
+                    <span class="track-title">The Longest Day II (2007)</span>
+                    <a href="The_Longest_Day_II__2007_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">29.</span>
+                    <span class="track-title">E01_EWS_Amano&Kosei (2009)</span>
+                    <a href="E01_EWS_Amano_Kosei__2009_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">30.</span>
+                    <span class="track-title">battle suite 1997 (1997)</span>
+                    <a href="battle_suite_1997__1997_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">31.</span>
+                    <span class="track-title">EM20 KOTETSU Voice Orchestra (shin)</span>
+                    <a href="EM20_KOTETSU_Voice_Orchestra__shin_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">32.</span>
+                    <span class="track-title">EM20 =spaghetti western swang= (shin)</span>
+                    <a href="EM20__spaghetti_western_swang___shin_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">33.</span>
+                    <span class="track-title">EM20 =super chiptune= (shin)</span>
+                    <a href="EM20__super_chiptune___shin_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">34.</span>
+                    <span class="track-title">EM10A alterne</span>
+                    <a href="EM10A_alterne.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">35.</span>
+                    <span class="track-title">EM10B Rhythm Main Mix 070820 (shin)</span>
+                    <a href="EM10B_Rhythm_Main_Mix_070820__shin_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">36.</span>
+                    <span class="track-title">EM10A alterne bis</span>
+                    <a href="EM10A_alterne_bis.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">37.</span>
+                    <span class="track-title">E01_matsumoto (2013)</span>
+                    <a href="E01_matsumoto__2013_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">38.</span>
+                    <span class="track-title">ch alt3 proto (shin)</span>
+                    <a href="ch_alt3_proto__shin_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">39.</span>
+                    <span class="track-title">NORMAL BLOOD</span>
+                    <a href="NORMAL_BLOOD.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">40.</span>
+                    <span class="track-title">euro nerv optionB =tokyo III and guitars= (shin)</span>
+                    <a href="euro_nerv_optionB__tokyo_III_and_guitars___shin_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">41.</span>
+                    <span class="track-title">E16_shima (2013)</span>
+                    <a href="E16_shima__2013_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">42.</span>
+                    <span class="track-title">E-16 fast rhythm only (1998)</span>
+                    <a href="E-16_fast_rhythm_only__1998_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">43.</span>
+                    <span class="track-title">Jerry Long (2016)</span>
+                    <a href="Jerry_Long__2016_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">44.</span>
+                    <span class="track-title">a short attention span (shin)</span>
+                    <a href="a_short_attention_span__shin_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">45.</span>
+                    <span class="track-title">2EM36 rhythm only (shin)</span>
+                    <a href="2EM36_rhythm_only__shin_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">46.</span>
+                    <span class="track-title">ch alt4 proto (shin)</span>
+                    <a href="ch_alt4_proto__shin_.html" class="track-button">View Detail</a>
+                </div>
+            
+        </div>
+    </div>
+</body>
+</html>

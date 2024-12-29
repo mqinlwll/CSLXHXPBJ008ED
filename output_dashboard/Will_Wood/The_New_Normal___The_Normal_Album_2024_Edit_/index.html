@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The New Normal! (The Normal Album 2024 Edit) - Will Wood</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .track-list {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 15px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .track-list ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .track-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px;
+            background-color: #f0f4f8;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .track-box:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        .track-number {
+            flex: 1;
+            font-size: 1.1rem;
+        }
+
+        .track-title {
+            flex: 2;
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        .track-button {
+            background-color: #007bff;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .track-button:hover {
+            background-color: #0056b3;
+        }
+
+        .navigation {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        .btn:focus {
+            outline: none;
+        }
+
+        /* Dark theme */
+        body.dark {
+            background-color: #333;
+            color: #f7f7f7;
+        }
+
+        body.dark .track-list {
+            background-color: #444;
+        }
+
+        body.dark .track-list .track-box {
+            background-color: #555;
+        }
+
+        body.dark .track-list .track-box:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        body.dark .navigation .btn:hover {
+            background-color: #0056b3;
+        }
+
+        body.dark .btn {
+            background-color: #28a745;
+        }
+    </style>
+</head>
+<script>
+    // Function to toggle the theme and store the preference in localStorage
+    function toggleStyle() {
+        document.body.classList.toggle("dark");
+        // Save the current theme state to localStorage
+        if (document.body.classList.contains("dark")) {
+            localStorage.setItem("theme", "dark");
+        } else {
+            localStorage.setItem("theme", "light");
+        }
+    }
+
+    // Check localStorage on page load and apply the saved theme
+    window.onload = function() {
+        const savedTheme = localStorage.getItem("theme");
+        // If theme is saved as 'dark', apply dark mode
+        if (savedTheme === "dark") {
+            document.body.classList.add("dark");
+        } else {
+            document.body.classList.remove("dark");
+        }
+    };
+</script>
+<body>
+    <div class="navigation">
+        <a class="btn" href="../../index.html">Go to Home Page</a>
+        <button onclick="toggleStyle()" class="btn">Change Theme</button>
+    </div>
+    <h1>The New Normal! (The Normal Album 2024 Edit) - Will Wood</h1>
+    <div class="track-list">
+        <p>Total Tracks: 13</p>
+        <div>
+            
+                <div class="track-box">
+                    <span class="track-number">1.</span>
+                    <span class="track-title">"Blue Velvet" Reboot Starring Tom Waits (Suburbia Overture 2024 Edit)</span>
+                    <a href="_Blue_Velvet__Reboot_Starring_Tom_Waits__Suburbia_Overture_2024_Edit_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">2.</span>
+                    <span class="track-title">Memento Mori (2018 Live in Studio Demo)</span>
+                    <a href="Memento_Mori__2018_Live_in_Studio_Demo_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">3.</span>
+                    <span class="track-title">Ideas Only Spread Because People Like Them, the "Free Market of Ideas" is not a Meritocracy, it's a Set of Unhealthy Coping Skills</span>
+                    <a href="Ideas_Only_Spread_Because_People_Like_Them__the__Free_Market_of_Ideas__is_not_a_Meritocracy__it_s_a_Set_of_Unhealthy_Coping_Skills.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">4.</span>
+                    <span class="track-title">A Knee-Slapping Joke Title Referring to How Ending Tracks on Will Wood Albums Are Always Kind of Like That (Memento Mori 2024 Edit</span>
+                    <a href="A_Knee-Slapping_Joke_Title_Referring_to_How_Ending_Tracks_on_Will_Wood_Albums_Are_Always_Kind_of_Like_That__Memento_Mori_2024_Edit.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">5.</span>
+                    <span class="track-title">Karen, Thannsdfghjkl You for the Casserole, But I Need You to Lea-n into a Typo (Marsha 2024 Edit)</span>
+                    <a href="Karen__Thannsdfghjkl_You_for_the_Casserole__But_I_Need_You_to_Lea-n_into_a_Typo__Marsha_2024_Edit_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">6.</span>
+                    <span class="track-title">I / Me / Myself (2024 Edit)</span>
+                    <a href="I___Me___Myself__2024_Edit_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">7.</span>
+                    <span class="track-title">Laplace's Angel (2018 Live in Studio Demo)</span>
+                    <a href="Laplace_s_Angel__2018_Live_in_Studio_Demo_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">8.</span>
+                    <span class="track-title">Second Sight Seer! S! (2222024 Edit)</span>
+                    <a href="Second_Sight_Seer__S___2222024_Edit_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">9.</span>
+                    <span class="track-title">I / Me / Myself (2018 Live in Studio Demo)</span>
+                    <a href="I___Me___Myself__2018_Live_in_Studio_Demo_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">10.</span>
+                    <span class="track-title">...well, better than the alternative (Better Alternative Edit)</span>
+                    <a href="___well__better_than_the_alternative__Better_Alternative_Edit_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">11.</span>
+                    <span class="track-title">I Lied About the Apple Thing (Skeleton-Bones Edition)</span>
+                    <a href="I_Lied_About_the_Apple_Thing__Skeleton-Bones_Edition_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">12.</span>
+                    <span class="track-title">The Moral Implications of a Deterministic Universe feat. The Onceler (Laplace's Angel 2024 Edit)</span>
+                    <a href="The_Moral_Implications_of_a_Deterministic_Universe_feat__The_Onceler__Laplace_s_Angel_2024_Edit_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">13.</span>
+                    <span class="track-title">Love, Me Normally</span>
+                    <a href="Love__Me_Normally.html" class="track-button">View Detail</a>
+                </div>
+            
+        </div>
+    </div>
+</body>
+</html>

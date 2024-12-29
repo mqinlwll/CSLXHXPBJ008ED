@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Adventure Time, Vol. 5 (Original Soundtrack) - Adventure Time</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .track-list {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 15px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .track-list ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .track-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px;
+            background-color: #f0f4f8;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .track-box:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        .track-number {
+            flex: 1;
+            font-size: 1.1rem;
+        }
+
+        .track-title {
+            flex: 2;
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        .track-button {
+            background-color: #007bff;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .track-button:hover {
+            background-color: #0056b3;
+        }
+
+        .navigation {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        .btn:focus {
+            outline: none;
+        }
+
+        /* Dark theme */
+        body.dark {
+            background-color: #333;
+            color: #f7f7f7;
+        }
+
+        body.dark .track-list {
+            background-color: #444;
+        }
+
+        body.dark .track-list .track-box {
+            background-color: #555;
+        }
+
+        body.dark .track-list .track-box:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        body.dark .navigation .btn:hover {
+            background-color: #0056b3;
+        }
+
+        body.dark .btn {
+            background-color: #28a745;
+        }
+    </style>
+</head>
+<script>
+    // Function to toggle the theme and store the preference in localStorage
+    function toggleStyle() {
+        document.body.classList.toggle("dark");
+        // Save the current theme state to localStorage
+        if (document.body.classList.contains("dark")) {
+            localStorage.setItem("theme", "dark");
+        } else {
+            localStorage.setItem("theme", "light");
+        }
+    }
+
+    // Check localStorage on page load and apply the saved theme
+    window.onload = function() {
+        const savedTheme = localStorage.getItem("theme");
+        // If theme is saved as 'dark', apply dark mode
+        if (savedTheme === "dark") {
+            document.body.classList.add("dark");
+        } else {
+            document.body.classList.remove("dark");
+        }
+    };
+</script>
+<body>
+    <div class="navigation">
+        <a class="btn" href="../../index.html">Go to Home Page</a>
+        <button onclick="toggleStyle()" class="btn">Change Theme</button>
+    </div>
+    <h1>Adventure Time, Vol. 5 (Original Soundtrack) - Adventure Time</h1>
+    <div class="track-list">
+        <p>Total Tracks: 56</p>
+        <div>
+            
+                <div class="track-box">
+                    <span class="track-number">1.</span>
+                    <span class="track-title">Falling Isn't so Bad</span>
+                    <a href="Falling_Isn_t_so_Bad.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">2.</span>
+                    <span class="track-title">Beach Brawl Fantasy</span>
+                    <a href="Beach_Brawl_Fantasy.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">3.</span>
+                    <span class="track-title">Grey</span>
+                    <a href="Grey.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">4.</span>
+                    <span class="track-title">Ghost Buddy</span>
+                    <a href="Ghost_Buddy.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">5.</span>
+                    <span class="track-title">Really Big Sweaters</span>
+                    <a href="Really_Big_Sweaters.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">6.</span>
+                    <span class="track-title">Werk Dat Belly</span>
+                    <a href="Werk_Dat_Belly.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">7.</span>
+                    <span class="track-title">They Set You Free</span>
+                    <a href="They_Set_You_Free.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">8.</span>
+                    <span class="track-title">Goblin City Shuffle</span>
+                    <a href="Goblin_City_Shuffle.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">9.</span>
+                    <span class="track-title">Attack of the Candy Cannibals</span>
+                    <a href="Attack_of_the_Candy_Cannibals.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">10.</span>
+                    <span class="track-title">The Cosmos in a Nacho</span>
+                    <a href="The_Cosmos_in_a_Nacho.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">11.</span>
+                    <span class="track-title">Thinking of Butts</span>
+                    <a href="Thinking_of_Butts.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">12.</span>
+                    <span class="track-title">Nervous Flamez</span>
+                    <a href="Nervous_Flamez.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">13.</span>
+                    <span class="track-title">A Beastly Condition</span>
+                    <a href="A_Beastly_Condition.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">14.</span>
+                    <span class="track-title">Vamp Vamp</span>
+                    <a href="Vamp_Vamp.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">15.</span>
+                    <span class="track-title">Low G Rap Battle (feat. Andy Samberg & Jeremy Shada)</span>
+                    <a href="Low_G_Rap_Battle__feat__Andy_Samberg___Jeremy_Shada_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">16.</span>
+                    <span class="track-title">Up on Muffin Hill</span>
+                    <a href="Up_on_Muffin_Hill.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">17.</span>
+                    <span class="track-title">Getting a Call in the Woods</span>
+                    <a href="Getting_a_Call_in_the_Woods.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">18.</span>
+                    <span class="track-title">Give Me Tears (feat. Karen Vuong)</span>
+                    <a href="Give_Me_Tears__feat__Karen_Vuong_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">19.</span>
+                    <span class="track-title">Cooking Is Fun</span>
+                    <a href="Cooking_Is_Fun.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">20.</span>
+                    <span class="track-title">Trunked Up</span>
+                    <a href="Trunked_Up.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">21.</span>
+                    <span class="track-title">Baby Feelings</span>
+                    <a href="Baby_Feelings.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">22.</span>
+                    <span class="track-title">Skool Bell Strut</span>
+                    <a href="Skool_Bell_Strut.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">23.</span>
+                    <span class="track-title">Old Stump Town</span>
+                    <a href="Old_Stump_Town.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">24.</span>
+                    <span class="track-title">That Red Hot Dame Lorraine</span>
+                    <a href="That_Red_Hot_Dame_Lorraine.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">25.</span>
+                    <span class="track-title">Modern Comforts</span>
+                    <a href="Modern_Comforts.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">26.</span>
+                    <span class="track-title">Club in the Clouds</span>
+                    <a href="Club_in_the_Clouds.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">27.</span>
+                    <span class="track-title">Words from the Forest</span>
+                    <a href="Words_from_the_Forest.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">28.</span>
+                    <span class="track-title">Holliday for Nuts</span>
+                    <a href="Holliday_for_Nuts.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">29.</span>
+                    <span class="track-title">Hiking Across Heartbreak</span>
+                    <a href="Hiking_Across_Heartbreak.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">30.</span>
+                    <span class="track-title">Big Time</span>
+                    <a href="Big_Time.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">31.</span>
+                    <span class="track-title">Buff Baby (feat. Jeremy Shada)</span>
+                    <a href="Buff_Baby__feat__Jeremy_Shada_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">32.</span>
+                    <span class="track-title">Soy People</span>
+                    <a href="Soy_People.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">33.</span>
+                    <span class="track-title">Wish Upon a String</span>
+                    <a href="Wish_Upon_a_String.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">34.</span>
+                    <span class="track-title">Hardcore Will Never Digest (Original Teddybear Mix)</span>
+                    <a href="Hardcore_Will_Never_Digest__Original_Teddybear_Mix_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">35.</span>
+                    <span class="track-title">Train Chasers</span>
+                    <a href="Train_Chasers.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">36.</span>
+                    <span class="track-title">Frogiven</span>
+                    <a href="Frogiven.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">37.</span>
+                    <span class="track-title">Miniature Dancing Cats</span>
+                    <a href="Miniature_Dancing_Cats.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">38.</span>
+                    <span class="track-title">Big Boy Coconuts</span>
+                    <a href="Big_Boy_Coconuts.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">39.</span>
+                    <span class="track-title">Space Transit</span>
+                    <a href="Space_Transit.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">40.</span>
+                    <span class="track-title">Hard Skipping</span>
+                    <a href="Hard_Skipping.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">41.</span>
+                    <span class="track-title">Walk into the Sun</span>
+                    <a href="Walk_into_the_Sun.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">42.</span>
+                    <span class="track-title">Hairrevelation</span>
+                    <a href="Hairrevelation.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">43.</span>
+                    <span class="track-title">Slow Space</span>
+                    <a href="Slow_Space.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">44.</span>
+                    <span class="track-title">Zombie Loop</span>
+                    <a href="Zombie_Loop.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">45.</span>
+                    <span class="track-title">Real Heroes</span>
+                    <a href="Real_Heroes.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">46.</span>
+                    <span class="track-title">The Conductor</span>
+                    <a href="The_Conductor.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">47.</span>
+                    <span class="track-title">Surfing on Brain Waves</span>
+                    <a href="Surfing_on_Brain_Waves.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">48.</span>
+                    <span class="track-title">When a Brave Soldier Claps</span>
+                    <a href="When_a_Brave_Soldier_Claps.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">49.</span>
+                    <span class="track-title">Don't Tell Dad</span>
+                    <a href="Don_t_Tell_Dad.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">50.</span>
+                    <span class="track-title">Time for Graybles</span>
+                    <a href="Time_for_Graybles.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">51.</span>
+                    <span class="track-title">On the Tail</span>
+                    <a href="On_the_Tail.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">52.</span>
+                    <span class="track-title">Gum Party</span>
+                    <a href="Gum_Party.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">53.</span>
+                    <span class="track-title">Oh What a Good Boy Am I (feat. Jeremy Shada & John DiMaggio)</span>
+                    <a href="Oh_What_a_Good_Boy_Am_I__feat__Jeremy_Shada___John_DiMaggio_.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">54.</span>
+                    <span class="track-title">Adventure Friends</span>
+                    <a href="Adventure_Friends.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">55.</span>
+                    <span class="track-title">Brick by Brick</span>
+                    <a href="Brick_by_Brick.html" class="track-button">View Detail</a>
+                </div>
+            
+                <div class="track-box">
+                    <span class="track-number">56.</span>
+                    <span class="track-title">A Blip and a Bubble</span>
+                    <a href="A_Blip_and_a_Bubble.html" class="track-button">View Detail</a>
+                </div>
+            
+        </div>
+    </div>
+</body>
+</html>
